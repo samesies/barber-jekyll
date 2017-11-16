@@ -1,0 +1,20 @@
+//----------------------------------------------
+// Buttons
+//---------------------------------------------- 
+button {
+  @include btn-split($color-black, $color-black, 2px, 0.75em 1em);
+
+  margin: 0;
+
+  font-family: $font;
+  font-weight: 400;
+  font-size: $font-small;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  outline: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: background 200ms ease-in-out;
+}

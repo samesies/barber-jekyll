@@ -1,0 +1,12 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "at-rule-no-unknown": [ true, {
+      "ignoreAtRules": [
+        "extend", "for", "if", "include", "mixin", "while"
+      ]
+    }],
+    "declaration-empty-line-before": null,
+    "selector-pseudo-element-colon-notation": "single"
+  }
+}

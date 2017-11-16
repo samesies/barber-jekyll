@@ -1,0 +1,114 @@
+//---------------------------------------------- 
+//  Flex Grid - flex-grid()
+//  @description: Creates a flexbox grid
+//  @param:       $sm, $md, $lg, $xl: [null] - Media sizes
+//  @param:       $pad: [0] - Padding of child elements and negative margin of parent
+//----------------------------------------------
+@mixin flex-grid($xs, $sm, $md, $lg: null, $xl: null, $pad: 0) {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  margin-left: -$pad;
+  margin-right: -$pad;
+
+  & > * {
+    padding: $pad;
+    flex-basis: 100% / $xs;
+    max-width: 100% / $xs;
+
+    @media (min-width: $mq-small) {
+      flex-basis: 100% / $sm;
+      max-width: 100% / $sm;
+    }
+
+    @media (min-width: $mq-med) {
+      flex-basis: 100% / $md;
+      max-width: 100% / $md;
+    }
+
+    @if $lg {
+      @media (min-width: $mq-large) {
+        flex-basis: 100% / $lg;
+        max-width: 100% / $lg;
+      }
+    }
+
+    @if $xl {
+      @media (min-width: $mq-xlarge) {
+        flex-basis: 100% / $xl;
+        max-width: 100% / $xl;
+      }
+    }
+  }
+}
+
+//---------------------------------------------- 
+//  Flex Grid Animation - flex-grid-animation()
+//  @description: Animation delay for flex grid
+//  @param:       $xs, $sm, $md, $lg, $xl: [null] - Media sizes
+//  @param:       $delay: [0.1s] - Animation delay of child elements
+//----------------------------------------------
+@mixin flex-grid-animation($xs, $sm, $md, $lg: null, $xl: null, $delay: 0.1s) {
+  & > * {
+    $count: 1;
+
+    @while $count <= $xs {
+      &:nth-child(#{$xs}n + #{$count}) {
+        animation-delay: $delay * $count;
+      }
+      $count: $count + 1;
+    }
+
+    @media (min-width: $mq-small) {
+      $count: 1;
+
+      @while $count <= $sm {
+        &:nth-child(#{$sm}n + #{$count}) {
+          animation-delay: $delay * $count;
+        }
+
+        $count: $count + 1;
+      }
+    }
+
+    @media (min-width: $mq-med) {
+      $count: 1;
+
+      @while $count <= $md {
+        &:nth-child(#{$md}n + #{$count}) {
+          animation-delay: $delay * $count;
+        }
+
+        $count: $count + 1;
+      }
+    }
+
+    @if $lg {
+      @media (min-width: $mq-large) {
+        $count: 1;
+
+        @while $count <= $lg {
+          &:nth-child(#{$lg}n + #{$count}) {
+            animation-delay: $delay * $count;
+          }
+
+          $count: $count + 1;
+        }
+      }
+    }
+
+    @if $xl {
+      @media (min-width: $mq-xlarge) {
+        $count: 1;
+
+        @while $count <= $xl {
+          &:nth-child(#{$xl}n + #{$count}) {
+            animation-delay: $delay * $count;
+          }
+
+          $count: $count + 1;
+        }
+      }
+    }
+  }
+}

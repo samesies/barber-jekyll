@@ -1,0 +1,44 @@
+//----------------------------------------------
+// Contact
+//---------------------------------------------- 
+.contact {
+  @media (min-width: $mq-med) {
+    display: flex;
+    min-height: calc(100vh - 3em);
+
+    & > * {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+  }
+
+  &__img {
+    position: relative;
+
+    height: 18em;
+
+    background-color: $color-lightgrey;
+
+    @media (min-width: $mq-small) {
+      height: 36em;
+    }
+
+    @media (min-width: $mq-med) {
+      height: auto;
+    }
+  }
+
+  &__mast {
+    @extend %text-center;
+  }
+
+  &__text {
+    @extend %text-center;
+
+    margin-bottom: 3em;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

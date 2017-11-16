@@ -1,0 +1,44 @@
+//---------------------------------------------- 
+//  Button Split - btn-split()
+//  @description: Creates a button that has a splitting border effect
+//  @param:       $color - Color
+//  @param:       $borderColor: [$color] - Border color
+//  @param:       $borderWidth: [2px] - Border width
+//  @param:       $pad: [0] - Padding
+//----------------------------------------------
+@mixin btn-split($color, $borderColor: $color, $borderWidth: 1px, $pad: 0) {
+  position: relative;
+
+  padding: $pad;
+
+  color: $color;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    border: $borderWidth solid $borderColor;
+    transition: transform 200ms ease-in;
+  }
+
+  &:hover {
+    &:before,
+    &:after {
+      transition: transform 200ms ease-out;
+    }
+
+    &:before {
+      transform: translate3d(-$borderWidth - 1px, $borderWidth + 1px, 0);
+    }
+
+    &:after {
+      transform: translate3d($borderWidth + 1px, -$borderWidth - 1px, 0);
+    }
+  }
+}

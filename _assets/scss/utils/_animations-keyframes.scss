@@ -1,0 +1,64 @@
+//----------------------------------------------
+// Fade In
+//---------------------------------------------- 
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+//----------------------------------------------
+// Fade Out
+//---------------------------------------------- 
+@keyframes fade-out {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+//----------------------------------------------
+// Fade Out
+//---------------------------------------------- 
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+//----------------------------------------------
+// Spin
+//---------------------------------------------- 
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+  to { transform: rotate(-360deg); }
+}
+
+//----------------------------------------------
+// Animation Helper
+//---------------------------------------------- 
+.fade-in {
+  animation: fade-in ease-in-out 600ms both;
+}
+
+.fade-out {
+  animation: fade-out ease-in-out 600ms both;
+}
+
+.fade-up {
+  animation: fade-up ease-in-out 800ms both;
+}
+
+//----------------------------------------------
+// Animation Helper Wow
+//---------------------------------------------- 
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}

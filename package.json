@@ -1,0 +1,46 @@
+{
+  "name": "barber-jekyll",
+  "description": "Barber is a blog theme for Jekyll built by Thomas Vaeth at Samesies using HTML, Sass, and JavaScript.",
+  "demo": "http://barber.samesies.io",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": {
+    "name": "Samesies",
+    "email": "okay@samesies.io",
+    "url": "http://samesies.io"
+  },
+  "keywords": [
+    "barber",
+    "jekyll",
+    "blog",
+    "theme"
+  ],
+  "dependencies": {
+    "promise-polyfill": "^6.0.2",
+    "salvattore": "^1.0.9",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
+    "eslint": "^4.11.0",
+    "eslint-config-eslint": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-eslint": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-stylelint": "^5.0.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-zip": "^4.0.0",
+    "stylelint-config-standard": "^17.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

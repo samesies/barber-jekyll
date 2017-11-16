@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  {% include head.html %}
+
+</head>
+<body id="{% if page.title %}{{ page.title | downcase }}{% else %}home{% endif %}">
+  
+  {% include header.html %}
+
+  <main class="💈">
+
+    {{ content }}
+    
+  </main>
+
+  {% include footer.html %}
+
+</body>
+</html>

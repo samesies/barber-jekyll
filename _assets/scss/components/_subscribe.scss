@@ -1,0 +1,42 @@
+//----------------------------------------------
+// Subscribe
+//---------------------------------------------- 
+.subscribe {
+  margin-bottom: 3em;
+
+  &__container {
+    @extend %auto-margin;
+
+    max-width: $mq-small;
+  }
+
+  &__title {
+    @extend %font-header;
+    @extend %text-center;
+
+    display: block;
+
+    font-size: 1.25em;
+  }
+
+  &__text {
+    @extend %text-center;
+
+    margin: {
+      top: 0.75em;
+      bottom: 1.75em;
+    };
+  }
+
+  &__error {
+    @extend %font-header;
+    @extend %text-center;
+
+    margin: {
+      top: 0.75em;
+      bottom: 0;
+    }
+
+    color: $color-alpha;
+  }
+}
