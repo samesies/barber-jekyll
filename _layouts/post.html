@@ -1,0 +1,80 @@
+---
+layout: default
+---
+<div class="post">
+  <article>
+    <div class="post__header section-padding">
+      <div class="grid-small">
+        <h2>{{ page.title }}</h2>
+
+        <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %b %Y" }}</time>
+      </div>
+    </div>
+
+    {% if page.image %}
+      <div class="post__img">
+        <div>
+          <figure class="absolute-bg" style="background-image: url('{{ page.image }}');"></figure>
+        </div>
+      </div>
+    {% endif %}
+
+    <div class="post__content section-padding">
+      <div class="grid-small">
+        {{content}}
+
+        {% include share.html %}
+      </div>
+    </div>
+
+    <!-- Everything inside the #author tags pulls data from the author -->
+    {{#author}}
+      <div class="section-padding--none">
+        <div class="grid">
+          <hr class="sep"/>
+        </div>
+      </div>
+
+      <div class="section-padding">
+        <div class="grid-small">
+          <span class="post__author">Posted by <a href="{{url}}" title="More By {{name}}">{{name}}</a></span>
+          {{#if bio}}
+            <p class="post__bio">{{bio}}</p>
+          {{/if}}
+        </div>
+      </div>
+    {{/author}}
+
+    {% include disqus.html %}
+
+  </article>
+</div>
+
+<!-- Links to Previous/Next posts -->
+{{#if primary_tag}}
+  {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{id}}" limit="3"}}
+    {{#if posts}}
+      <section class="related section-padding">
+        <div class="grid-xlarge">
+          <h2 class="related__title">Related</h2>
+          <div class="related__container"> 
+            {{#foreach posts}}
+              <article class="related__post">
+                <a class="related__link" href="{{url}}">
+                  {{#if feature_image}}
+                    <figure class="related__img">
+                      <img src="{{feature_image}}" alt="{{title}}"/>
+                    </figure>
+                  {{/if}}
+                  <div class="related__content">
+                    <h2 class="related__text">{{title}}</h2>
+                  </div>
+                </a>
+              </article>
+            {{/foreach}}
+          </div>
+        </div>
+      </section>
+    {{/if}}
+  {{/get}}
+{{/if}}
