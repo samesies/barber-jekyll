@@ -51,30 +51,26 @@ layout: default
 </div>
 
 <!-- Links to Previous/Next posts -->
-{{#if primary_tag}}
-  {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{id}}" limit="3"}}
-    {{#if posts}}
-      <section class="related section-padding">
-        <div class="grid-xlarge">
-          <h2 class="related__title">Related</h2>
-          <div class="related__container"> 
-            {{#foreach posts}}
-              <article class="related__post">
-                <a class="related__link" href="{{url}}">
-                  {{#if feature_image}}
-                    <figure class="related__img">
-                      <img src="{{feature_image}}" alt="{{title}}"/>
-                    </figure>
-                  {{/if}}
-                  <div class="related__content">
-                    <h2 class="related__text">{{title}}</h2>
-                  </div>
-                </a>
-              </article>
-            {{/foreach}}
-          </div>
-        </div>
-      </section>
-    {{/if}}
-  {{/get}}
-{{/if}}
+{% if content and page.related %}
+  <section class="related section-padding">
+    <div class="grid-xlarge">
+      <h2 class="related__title">Related</h2>
+      <div class="related__container"> 
+        {% for post in site.posts limit: 3 %}
+          <article class="related__post">
+            <a class="related__link" href="{{ post.url | prepend: site.baseurl }}">
+              {% if post.image %}
+                <figure class="related__img">
+                  <img src="{{ post.image }}" alt="{{ post.title }}"/>
+                </figure>
+              {% endif %}
+              <div class="related__content">
+                <h2 class="related__text">{{ post.title }}</h2>
+              </div>
+            </a>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}
