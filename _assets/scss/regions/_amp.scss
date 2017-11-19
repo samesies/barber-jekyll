@@ -74,12 +74,6 @@
     background-color: $color-white;
   }
 
-  &__text {
-    @extend %text-center;
-
-    margin-bottom: 1em;
-  }
-
   &__tags {
     @extend %flex-center;
     @extend %no-list-style;

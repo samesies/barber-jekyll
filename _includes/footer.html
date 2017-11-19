@@ -14,8 +14,6 @@
     {{/if}}
 
     <div class="footer__container">
-      <p class="footer__text">New posts added every few days.</p>
-
       {{#get "tags" limit="5" order="count.posts DESC"}}
         {{#if tags}}
           <ul class="footer__tags">
@@ -28,7 +26,7 @@
         {{/if}}
       {{/get}}
 
-      {{> social}}
+      {% include social.html %}
     </div>
   </div>
 </footer>

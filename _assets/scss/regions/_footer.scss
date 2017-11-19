@@ -10,12 +10,6 @@
     margin-top: 3em;
   }
 
-  &__text {
-    @extend %text-center;
-
-    margin-bottom: 2em;
-  }
-
   &__tags {
     @extend %flex-center;
     @extend %no-list-style;
