@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section class="post">
+  <div>
+    <div class="post__header section-padding">
+      <div class="grid-small">
+        <h2>{{ page.title }}</h2>
+      </div>
+    </div>
+
+    {% if page.image %}
+      <div class="post__img">
+        <div>
+          <figure class="absolute-bg" style="background-image: url('{{ page.image }}');"></figure>
+        </div>
+      </div>
+    {% endif %}
+
+    <div class="post__content section-padding">
+      <div class="grid-small">
+        <div class="markdown">
+          {{content}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

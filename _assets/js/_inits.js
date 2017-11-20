@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     InfiniteScroll.init();
   }
 
-  if (document.querySelector('.kg-card-markdown')) {
+  if (document.querySelector('.markdown')) {
     miscFlexVid();
     miscSocialShare();
   }
