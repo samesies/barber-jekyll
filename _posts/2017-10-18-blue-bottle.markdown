@@ -5,7 +5,7 @@ date: 2017-10-18
 description: 
 image: /assets/images/placeholder-5.jpg
 author: 
-categories: 
+tags: 
 related: 
 ---
 # Bicycle Rights

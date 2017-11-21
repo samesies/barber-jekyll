@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<section class="mast section-padding">
+  <div class="grid">
+    <h2>{{ page.tag | titleize }}</h2>
+  </div>
+</section>
+
+<div class="section-padding--none">
+  <div class="grid-large">
+    <hr class="sep"/>
+  </div>
+</div>
+
+<!-- The main content area -->
+<div class="posts">
+  <div class="grid-xlarge">
+    <div class="posts__container" data-columns>
+
+      {% for post in page.posts %}
+
+        <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+        {% include post-card.html %}
+
+      {% endfor %}
+    </div>
+  </div>
+
+  {% include pagination.html %}
+</div>

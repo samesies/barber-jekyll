@@ -4,51 +4,59 @@ title: Style Guide
 permalink: /style-guide
 image: /assets/images/placeholder-18.jpg
 ---
-My name is Thomas Vaeth and this is Barber. 💈 Barber is a minimal blog theme with a masonry grid layout and infinite scroll. [Samesies](http://samesies.io) builds themes for Ghost, WordPress, and Jekyll and they are only available through ThemeForest.
+<p>My name is Thomas Vaeth and this is Barber. 💈 Barber is a minimal blog theme with a masonry grid layout and infinite scroll. <a href="http://samesies.io" target="_blank">Samesies</a> builds themes for Ghost, WordPress, and Jekyll and they are only available through ThemeForest.</p>
 
 <hr/>
 
-# Artisan cray pickled whatever
-## Artisan cray pickled whatever
-### Artisan cray pickled whatever
-#### Artisan cray pickled whatever
-##### Artisan cray pickled whatever
-###### Artisan cray pickled whatever
+<h1>Artisan cray pickled whatever</h1>
+<h2>Artisan cray pickled whatever</h2>
+<h3>Artisan cray pickled whatever</h3>
+<h4>Artisan cray pickled whatever</h4>
+<h5>Artisan cray pickled whatever</h5>
+<h6>Artisan cray pickled whatever</h6>
 
 <hr/>
 
-1. Wes anderson cliche cosby sweater brooklyn vegan organic.
-2. Synth ennui semiotics mustache pickled.
-3. Food truck freegan vinyl thundercats, post-ironic ennui wes anderson banh mi four loko synth photo booth authentic 3 wolf moon.
+<ol>
+  <li>Wes anderson cliche cosby sweater brooklyn vegan organic.</li>
+  <li>Synth ennui semiotics mustache pickled.</li>
+  <li>Food truck freegan vinyl thundercats, post-ironic ennui wes anderson banh mi four loko synth photo booth authentic 3 wolf moon.</li>
+</ol>
 
 <hr/>
 
-* Wes anderson cliche cosby sweater brooklyn vegan organic.
-* Synth ennui semiotics mustache pickled.
-* Food truck freegan vinyl thundercats, post-ironic ennui wes anderson banh mi four loko synth photo booth authentic 3 wolf moon.
+<ul>
+  <li>Wes anderson cliche cosby sweater brooklyn vegan organic.</li>
+  <li>Synth ennui semiotics mustache pickled.</li>
+  <li>Food truck freegan vinyl thundercats, post-ironic ennui wes anderson banh mi four loko synth photo booth authentic 3 wolf moon.</li>
+</ul>
 
 <hr/>
 
-> “Bicycle rights mustache artisan, keytar lo-fi sustainable fap stumptown vegan salvia freegan four loko terry richardson.”
-> <cite>Wolf Moon Cred</cite>
+<blockquote>
+  <p>“Bicycle rights mustache artisan, keytar lo-fi sustainable fap stumptown vegan salvia freegan four loko terry richardson.”</p>
+  <cite>Wolf Moon Cred</cite>
+</blockquote>
 
 <hr/>
 
-```
+<pre>
+<code>
 code {
   padding: 0.25em 0.5em;
 
   color: $color-black;
   background: $color-lightgrey;
 }
-```
+</code>
+</pre>
 
 <hr/>
 
-![Grid Image](/assets/images/placeholder-18.jpg)
-You can `use inline code` and append `#full` to the end of an image URL for full width images.
+<img src="/assets/images/placeholder-18.jpg" alt="Grid Image"/>
+<p>You can <code>use inline code</code> and append <code>#full</code> to the end of an image URL for full width images.</p>
 
-![Full Image](/assets/images/placeholder-18.jpg#full)
+<img src="/assets/images/placeholder-18.jpg#full" alt="Full Image"/>
 
 <hr/>
 
@@ -64,4 +72,4 @@ You can `use inline code` and append `#full` to the end of an image URL for full
 
 <hr/>
 
-American apparel jean shorts terry richardson squid. Letterpress tattooed cray beard pinterest. Jean shorts tofu wayfarers, fap PBR swag banh mi. Organic chillwave scenester wayfarers semiotics salvia messenger bag, vice odd future.
+<p>American apparel jean shorts terry richardson squid. Letterpress tattooed cray beard pinterest. Jean shorts tofu wayfarers, fap PBR swag banh mi. Organic chillwave scenester wayfarers semiotics salvia messenger bag, vice odd future.</p>

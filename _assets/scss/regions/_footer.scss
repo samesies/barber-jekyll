@@ -16,8 +16,12 @@
 
     flex-wrap: wrap;
 
-    & > *:not(:last-child) {
-      margin-right: 1em;
+    & > * {
+      margin-bottom: 2em;
+
+      &:not(:last-child) {
+        margin-right: 1em;
+      }
     }
   }
 
@@ -36,8 +40,6 @@
   &__social {
     @extend %flex-center;
     @extend %no-list-style;
-
-    margin-top: 2em;
 
     & > *:not(:last-child) {
       margin-right: 0.75em;

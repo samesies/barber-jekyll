@@ -5,7 +5,7 @@ date: 2017-10-15
 description: 
 image: /assets/images/placeholder-16.jpg
 author: 
-categories: 
+tags: 
 related: 
 ---
 Cred artisan post-ironic ramps chillwave. Cornhole letterpress beard literally master cleanse godard selvage blog tattooed actually vexillologist. Fingerstache tousled DIY +1. 

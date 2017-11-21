@@ -5,7 +5,7 @@ date: 2017-10-19
 description: 
 image: /assets/images/placeholder-4.jpg
 author: 
-categories: 
+tags: 
 related: 
 ---
 You probably haven't heard of them pug wayfarers pork belly ennui ramps yuccie seitan hexagon mumblecore PBR&B banjo readymade. Fixie post-ironic ennui, freegan blog kale chips bitters tote bag polaroid jean shorts. 

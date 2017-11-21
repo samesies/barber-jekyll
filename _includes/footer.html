@@ -14,17 +14,7 @@
     {{/if}}
 
     <div class="footer__container">
-      {{#get "tags" limit="5" order="count.posts DESC"}}
-        {{#if tags}}
-          <ul class="footer__tags">
-            {{#foreach tags}}
-              <li>
-                <a class="footer__link" href="{{url}}">{{name}}</a>
-              </li>
-            {{/foreach}}
-          </ul>
-        {{/if}}
-      {{/get}}
+      {% tags_list :threshold => 1, :sort_by => count, :order_by => desc, :limit => 5 %}
 
       {% include social.html %}
     </div>
