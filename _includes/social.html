@@ -1,12 +1,7 @@
-<ul class="footer__social">
-  {{#if @blog.facebook}}
-    <li><a href="{{facebook_url}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-  {{/if}}
-  {{#if @blog.twitter}}
-    <li><a href="{{twitter_url}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-  {{/if}}
-  <li><a href="https://www.instagram.com/thomas.vaeth/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-  <li><a href="https://www.linkedin.com/in/thomasvaeth/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-  <li><a href="https://github.com/thomasvaeth" target="_blank"><i class="fa fa-github"></i></a></li>
-  <li><a href="https://codepen.io/thomasvaeth/" target="_blank"><i class="fa fa-codepen"></i></a></li>
-</ul>
+{% if site.social %}
+  <ul class="footer__social">
+    {% for social in site.social %}
+      <li><a href="{{ social[1] }}" target="_blank"><i class="fa fa-{{ social[0] }}"></i></a></li>
+    {% endfor %}
+  </ul>
+{% endif %}

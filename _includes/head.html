@@ -16,7 +16,9 @@
 <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }} | {{ site.title }}{% else %}{{ site.title | escape }}{% endif %}">
 <meta name="twitter:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
 <meta name="twitter:site" content="{{ site.title }}">
-<meta name="twitter:creator" content="@{{ site.twitter_username }}">
+{% if site.twitter_username %}
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+{% endif %}
 <meta name="twitter:domain" content="{{ site.url }}">
 <meta property="twitter:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.default_img | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 
