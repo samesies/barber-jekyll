@@ -21,10 +21,10 @@
   </div>
 </footer>
 
-{{#if pagination.pages}}
-<script>
-  var maxPages = parseInt('{{pagination.pages}}');
-</script>
-{{/if}}
+{% if paginator.next_page %}
+  <script>
+    var maxPages = parseInt('{{ paginator.total_pages }}');
+  </script>
+{% endif %}
 
 <script type="text/javascript" src="{{ '/assets/js/app.min.js' | prepend: site.baseurl }}"></script>

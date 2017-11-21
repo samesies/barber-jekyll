@@ -2,7 +2,7 @@
 email: okay@samesies.io
 baseurl: ""
 paginate: 12
-paginate_path: "/blog/page-:num"
+paginate_path: "/page/:num"
 google_analytics: 
 
 # SEO settings
