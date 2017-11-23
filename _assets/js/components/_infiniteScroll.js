@@ -1,10 +1,11 @@
 // ----------------------------------------------
 // Imports
 // ----------------------------------------------
+import $ from 'jquery';
 import salvattore from 'salvattore';
 
 // ----------------------------------------------
-// Formspree
+// Infinite Scroll
 // ---------------------------------------------- 
 const InfiniteScroll = (() => {
   let s;
@@ -13,7 +14,7 @@ const InfiniteScroll = (() => {
     settings() {
       return {
         container: document.querySelector('.posts__container'),
-        next: document.querySelector('.posts__next'),
+        next: $('.posts__next'),
         class: 'js-posts-loading',
         currentPage: 1,
         pathname: window.location.pathname.replace(/#(.*)$/g, '').replace('//g', '/'),
@@ -27,8 +28,8 @@ const InfiniteScroll = (() => {
     },
 
     bindEvents() {
-      s.next.addEventListener('click', () => {
-        s.next.classList.add(s.class);
+      s.next.on('click', () => {
+        s.next.addClass(s.class);
         this.fetchPosts();
       });
     },
@@ -43,28 +44,31 @@ const InfiniteScroll = (() => {
 
       const nextPage = `${s.pathname}page/${s.currentPage}/`;
 
-      fetch(nextPage).then(response => response.text()).then(text => {
-        const parse = document.createRange().createContextualFragment(text);
-        const posts = parse.querySelectorAll('.posts__post');
+      $.ajax({
+        url: nextPage,
+        type: 'GET',
+        success: response => {
+          const parse = document.createRange().createContextualFragment(response);
+          const posts = parse.querySelectorAll('.posts__post');
 
-        if (posts.length) {
-          setTimeout(() => {
-            [].forEach.call(posts, post => {
-              post.classList.add('fade-up');
-              salvattore.appendElements(s.container, [post]);
-            });
+          if (posts.length) {
+            setTimeout(() => {
+              [].forEach.call(posts, post => {
+                post.classList.add('fade-up');
+                salvattore.appendElements(s.container, [post]);
+              });
 
-            s.next.classList.remove(s.class);
+              s.next.removeClass(s.class);
 
-            if (s.currentPage === maxPages) {
-              const child = document.querySelector('.posts__pagination');
-
-              child.parentNode.removeChild(child);
-            }
-          }, 750);
+              if (s.currentPage === maxPages) {
+                $('.posts__pagination').remove();
+              }
+            }, 750);
+          }
+        },
+        error: error => {
+          console.error(error);
         }
-      }).catch(error => {
-        console.error(error);
       });
 
       s.isLoading = false;

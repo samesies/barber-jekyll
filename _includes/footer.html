@@ -1,17 +1,15 @@
 <!-- The footer at the very bottom of the screen -->
 <footer class="footer section-padding">
   <div class="grid">
-    {{#if @labs.subscribers}}
-      <div class="subscribe" id="subscribe">
-        <div class="subscribe__container">
-          <span class="subscribe__title">Subscribe</span>
-          <p class="subscribe__text">Get a weekly email of posts I’ve added to the site.</p>
-          {{subscribe_form placeholder="Email Address"}}
-        </div>
+    <div class="subscribe" id="subscribe">
+      <div class="subscribe__container">
+        <span class="subscribe__title">Subscribe</span>
+        <p class="subscribe__text">Get a weekly email of posts I’ve added to the site.</p>
+        {% include subscribe-form.html %}
       </div>
+    </div>
 
-      <hr class="sep"/>
-    {{/if}}
+    <hr class="sep"/>
 
     <div class="footer__container">
       {% tags_list :threshold => 1, :sort_by => count, :order_by => desc, :limit => 5 %}

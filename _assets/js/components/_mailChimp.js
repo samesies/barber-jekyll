@@ -1,15 +1,21 @@
 // ----------------------------------------------
-// Formspree
+// Imports
+// ----------------------------------------------
+import $ from 'jquery';
+
+// ----------------------------------------------
+// Mail Chimp
 // ---------------------------------------------- 
-const Formspree = (() => {
+const MailChimp = (() => {
   let s;
 
   return {
     settings() {
       return {
-        form: $('#form'),
-        formAction: $('#form').attr('action'),
-        formMessage: $('.form__message'),
+        form: $('#mc-signup'),
+        formAction: $('#mc-signup').attr('action'),
+        formSubmit: $('#mc-submit'),
+        formMessage: $('.subscribe__error'),
         animation: 'fade-in'
       };
     },
@@ -20,30 +26,21 @@ const Formspree = (() => {
     },
 
     bindEvents() {
-      this.ajax();
-    },
-
-    ajax() {
-      s.form.submit(e => {
+      s.formSubmit.on('click', e => {
         e.preventDefault();
 
         $.ajax({
           url: s.formAction,
-          method: 'POST',
+          type: 'POST',
           data: s.form.serialize(),
-          dataType: 'json',
+          dataType: 'jsonp',
           success: () => {
-            s.formMessage.removeClass(s.animation);
-            s.formMessage.addClass(s.animation);
-            s.formMessage.text('Message Sent');
-
             s.form[0].reset();
           },
           error: () => {
             setTimeout(() => {
-              s.formMessage.removeClass(s.animation);
+              s.formMessage.removeClass('hidden');
               s.formMessage.addClass(s.animation);
-              s.formMessage.text('Something Went Wrong');
             }, 750);
           }
         });
@@ -55,4 +52,4 @@ const Formspree = (() => {
 // ----------------------------------------------
 // Exports
 // ----------------------------------------------
-export default Formspree;
+export default MailChimp;

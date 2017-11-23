@@ -1,15 +1,15 @@
-<form method="POST" action="{{action}}" class="{{form_class}}">
-  {{! This is required for the form to work correctly }}
-  {{hidden}}
-
-  <div class="form-group{{#if error}} error{{/if}}">
-    {{input_email class=input_class placeholder=placeholder value=email autofocus=autofocus}}
+<form method="POST" action="https://samesies.us17.list-manage.com/subscribe/post-json?u=66ddf555dab480e6a8606430b&amp;id=89b3ee034f&amp;c=?" id="mc-signup" name="mc-embedded-subscribe-form" novalidate>
+  <!-- This is required for the form to work correctly -->
+  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+    <input type="text" name="b_66ddf555dab480e6a8606430b_89b3ee034f" tabindex="-1" value="">
   </div>
-  <button class="{{button_class}}" type="submit">Sign Up</button>
-  {{! This is used to get extra info about where this subscriber came from }}
-  {{script}}
+
+  <div class="form-group">
+    <input id="mce-EMAIL" type="email" name="EMAIL" placeholder="Email Address">
+  </div>
+  <div class="form__btn">
+    <input id="mc-submit" type="submit" value="Sign Up" name="subscribe">
+  </div>
 </form>
 
-{{#if error}}
-  <p class="subscribe__error">There was an error.</p>
-{{/if}}
+<p class="subscribe__error hidden">There was an error.</p>

@@ -18,9 +18,8 @@
     "theme"
   ],
   "dependencies": {
-    "promise-polyfill": "^6.0.2",
-    "salvattore": "^1.0.9",
-    "whatwg-fetch": "^2.0.3"
+    "jquery": "^3.2.1",
+    "salvattore": "^1.0.9"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
