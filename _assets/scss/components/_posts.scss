@@ -2,7 +2,7 @@
 // Posts
 //---------------------------------------------- 
 .posts {
-  padding: 2em 1em;
+  padding: 1em;
 
   @media (min-width: $mq-small) {
     padding: {
@@ -20,8 +20,8 @@
 
   @media (min-width: $mq-xlarge) {
     padding: {
-      top: 4em;
-      bottom: 4em;
+      top: 2em;
+      bottom: 2em;
     }
   }
 
@@ -56,12 +56,12 @@
   &__post {
     padding: 2em 1em;
 
-    @media (min-width: $mq-small) {
-      padding: {
-        top: 4em;
-        bottom: 4em;
-      }
-    }
+    // @media (min-width: $mq-small) {
+    //   padding: {
+    //     top: 4em;
+    //     bottom: 4em;
+    //   }
+    // }
   }
 
   &__link {
@@ -105,11 +105,11 @@
     @extend %text-center;
 
     @media (min-width: $mq-small) {
-      padding-bottom: 2em;
+      padding-bottom: 1em;
     }
 
     @media (min-width: $mq-xlarge) {
-      padding-bottom: 4em;
+      padding-bottom: 2em;
     }
   }
 
