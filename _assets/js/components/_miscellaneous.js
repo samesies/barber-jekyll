@@ -1,6 +1,6 @@
 // ----------------------------------------------
 // Flex Vid
-// ---------------------------------------------- 
+// ----------------------------------------------
 const miscFlexVid = () => {
   const iframeArr = document.querySelectorAll('.post__content iframe');
 
@@ -17,7 +17,7 @@ const miscFlexVid = () => {
 
 // ----------------------------------------------
 // Social Share
-// ---------------------------------------------- 
+// ----------------------------------------------
 const miscSocialShare = () => {
   const socialArr = document.querySelectorAll('.post__social a');
 
