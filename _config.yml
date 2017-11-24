@@ -23,9 +23,6 @@ social:
 # Build settings
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
-tag_page_layout: tag
-tag_page_dir: tag
-tag_permalink_style: pretty
 plugins:
   - jekyll-paginate
   - jekyll-sitemap

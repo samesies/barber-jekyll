@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<section class="mast section-padding">
+<section class="mast section-padding--double">
   <div class="grid">
-    <h2>{{ page.tag | titleize }}</h2>
+    <h2>{{ page.tag | capitalize }}</h2>
   </div>
 </section>
 
@@ -18,7 +18,7 @@ layout: default
   <div class="grid-xlarge">
     <div class="posts__container" data-columns>
 
-      {% for post in page.posts %}
+      {% for post in paginator.posts %}
 
         <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
         {% include post-card.html %}

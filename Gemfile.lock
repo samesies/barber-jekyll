@@ -22,8 +22,6 @@ GEM
       sass (~> 3.4)
     jekyll-sitemap (1.1.1)
       jekyll (~> 3.3)
-    jekyll-tagging (1.1.0)
-      nuggets
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
     kramdown (1.15.0)
@@ -32,7 +30,6 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
-    nuggets (1.5.0)
     pathutil (0.16.0)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.1)
@@ -54,7 +51,6 @@ DEPENDENCIES
   jekyll (~> 3.6.2)
   jekyll-paginate
   jekyll-sitemap
-  jekyll-tagging
   tzinfo-data
 
 BUNDLED WITH

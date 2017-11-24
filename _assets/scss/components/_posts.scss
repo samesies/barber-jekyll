@@ -105,11 +105,14 @@
     @extend %text-center;
 
     @media (min-width: $mq-small) {
-      padding-bottom: 1em;
+      padding: {
+        top: 1em;
+        bottom: 2em;
+      }
     }
 
     @media (min-width: $mq-xlarge) {
-      padding-bottom: 2em;
+      padding-bottom: 3em;
     }
   }
 
