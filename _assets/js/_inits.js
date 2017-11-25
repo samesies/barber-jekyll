@@ -6,7 +6,7 @@ import WOW from './vendor/_wow.js';
 import Formspree from './components/_formspree.js';
 import InfiniteScroll from './components/_infiniteScroll.js';
 import MailChimp from './components/_mailChimp.js';
-import { miscFlexVid, miscSocialShare } from './components/_miscellaneous.js';
+import { miscFlexVid, miscSocialShare, miscFixedFooter } from './components/_miscellaneous.js';
 import PageTransition from './components/_pageTransition.js';
 
 // ----------------------------------------------
@@ -19,6 +19,7 @@ $(() => {
 
   // Inits
   wow.init();
+  miscFixedFooter();
   MailChimp.init();
   PageTransition.init();
 

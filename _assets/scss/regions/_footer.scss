@@ -2,6 +2,13 @@
 // Footer
 //---------------------------------------------- 
 .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+
+  width: 100%;
+
   color: $color-white;
   background-color: $color-black;
   border-top: $border;
@@ -64,4 +71,6 @@
 main {
   // flex-grow: 1;
   margin-top: $header-height;
+
+  background-color: $color-white;
 }

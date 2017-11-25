@@ -28,9 +28,25 @@ const miscSocialShare = () => {
 };
 
 // ----------------------------------------------
+// Fixed Footer
+// ----------------------------------------------
+const miscFixedFooter = () => {
+  let footerHeight = $('.footer').outerHeight();
+
+  $('body').css('margin-bottom', footerHeight);
+
+  $(window).on('resize', () => {
+    footerHeight = $('.footer').outerHeight();
+    
+    $('body').css('margin-bottom', footerHeight);
+  });
+};
+
+// ----------------------------------------------
 // Exports
 // ----------------------------------------------
 module.exports = {
   miscFlexVid,
-  miscSocialShare
+  miscSocialShare,
+  miscFixedFooter
 };
