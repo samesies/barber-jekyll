@@ -18,15 +18,15 @@ ol {
   ol,
   ul:not(.post__social) {
     margin: {
-      bottom: 1.25rem;
+      bottom: 1.5rem;
       left: 1em;
     }
 
     font-size: 1.1em;
 
-    // @media (min-width: $mq-small) {
-    //   font-size: 1.25em;
-    // }
+    @media (min-width: $mq-small) {
+      font-size: 1.25em;
+    }
 
     & > li {
       position: relative;
@@ -37,7 +37,7 @@ ol {
       }
 
       &:not(:last-child) {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.25rem;
       }
 
       p {

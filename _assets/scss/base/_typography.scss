@@ -89,9 +89,11 @@ p {
 //---------------------------------------------- 
 q,
 blockquote {
-  margin: 1.25rem 0 2rem;
+  @extend %text-center;
 
-  font-family: $font;
+  margin: 0 0 1.5rem;
+
+  font-family: $font-post;
   font-weight: 400;
   font-size: 1.25em;
   color: $color-black;
@@ -99,10 +101,6 @@ blockquote {
 
   @media (min-width: $mq-small) {
     font-size: 1.5em;
-    margin: {
-      top: 1.75rem;
-      bottom: 2.5rem;
-    }
   }
 }
 
@@ -111,13 +109,15 @@ cite {
 
   display: block;
 
+  font-family: $font;
   font-size: $font-xxxsmall;
   font-style: normal;
   color: $color-black;
+  line-height: $base-lineheight;
 
-  // &:before {
-  //   content: "\2014 \0020";
-  // }
+  &:before {
+    content: "\2014 \0020";
+  }
 }
 
 //----------------------------------------------

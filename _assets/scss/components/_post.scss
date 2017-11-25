@@ -2,6 +2,7 @@
 // Post
 //---------------------------------------------- 
 .post {
+
   .amp-template & {
     background-color: $color-white;
   }
@@ -117,6 +118,10 @@
   flex-direction: column;
   align-items: center;
 
+  #post & {
+    font-family: $font-post;
+  }
+
   & > * {
     min-width: 100%;
 
@@ -135,46 +140,48 @@
   h4,
   h5,
   h6 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
+
+    font-family: $font;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 2.25em;
     line-height: 1.2;
   }
 
   h2 {
-    font-size: 1.75em;
+    font-size: 2em;
     line-height: 1.2;
   }
 
   h3 {
-    font-size: 1.5em;
+    font-size: 1.75em;
     line-height: 1.3;
   }
 
   h4 {
-    font-size: 1.25em;
+    font-size: 1.5em;
     line-height: 1.3;
   }
 
   h5 {
-    font-size: 1.1em;
+    font-size: 1.25em;
     line-height: 1.4;
   }
 
   h6 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   p {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
 
     font-size: 1.1em;
 
-    // @media (min-width: $mq-small) {
-    //   font-size: 1.25em;
-    // }
+    @media (min-width: $mq-small) {
+      font-size: 1.25em;
+    }
   }
 
   blockquote {
@@ -194,7 +201,7 @@
     width: 100%;
     margin: {
       top: 0;
-      bottom: 1.25rem;
+      bottom: 1.5rem;
     }
 
     border: 0;
@@ -207,17 +214,7 @@
 
   img {
     display: block;
-    margin: {
-      top: 1.5rem;
-      bottom: 1.5rem;
-    }
-
-    @media (min-width: $mq-small) {
-      margin: {
-        top: 2rem;
-        bottom: 2rem;
-      }
-    }
+    margin-bottom: 1.5rem;
   }
 
   img[src$="#full"] {
@@ -226,10 +223,7 @@
   }
 
   .flex-vid {
-    margin: {
-      top: 0.25rem;
-      bottom: 1.5rem;
-    }
+    margin-bottom: 1.5rem;
 
     iframe {
       display: block;

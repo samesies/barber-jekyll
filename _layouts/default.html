@@ -5,7 +5,7 @@
   {% include head.html %}
 
 </head>
-<body id="{% if page.title %}{{ page.title | downcase }}{% else %}home{% endif %}">
+<body id="{{ page.layout | downcase }}">
   
   {% include header.html %}
 
