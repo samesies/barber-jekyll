@@ -1,17 +1,16 @@
 // ----------------------------------------------
+// Imports
+// ----------------------------------------------
+import $ from 'jquery';
+
+// ----------------------------------------------
 // Flex Vid
 // ----------------------------------------------
 const miscFlexVid = () => {
-  const iframeArr = document.querySelectorAll('.post__content iframe');
+  const iframeArr = $('.post__content iframe');
 
-  [].forEach.call(iframeArr, iframe => {
-    const div = document.createElement('div');
-
-    div.className = 'flex-vid';
-
-    iframe.parentNode.insertBefore(div, iframe);
-    iframe.parentNode.removeChild(iframe);
-    div.appendChild(iframe);
+  iframeArr.each((idx, iframe) => {
+    $(iframe).wrap('<div class="flex-vid"></div>');
   });
 };
 
@@ -19,11 +18,11 @@ const miscFlexVid = () => {
 // Social Share
 // ----------------------------------------------
 const miscSocialShare = () => {
-  const socialArr = document.querySelectorAll('.post__social a');
+  const socialArr = $('.post__social a');
 
-  [].forEach.call(socialArr, social => {
-    social.addEventListener('click', () => {
-      window.open(social.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=550,width=550');
+  socialArr.each((idx, social) => {
+    $(social).on('click', () => {
+      window.open($(social).attr('href'), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=550,width=550');
     });
   });
 };

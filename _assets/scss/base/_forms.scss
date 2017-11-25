@@ -33,6 +33,16 @@ textarea {
   &:focus {
     border-color: $color-black;
   }
+
+  .footer & {
+    color: $color-white;
+    border: 2px solid rgba($color-white, 0.6);
+
+    &:hover,
+    &:focus {
+      border-color: $color-white;
+    }
+  }
 }
 
 input[type="submit"] {

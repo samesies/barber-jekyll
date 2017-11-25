@@ -2,8 +2,8 @@
 // Footer
 //---------------------------------------------- 
 .footer {
-  padding-top: 2em;
-
+  color: $color-white;
+  background-color: $color-black;
   border-top: $border;
 
   &__container {
@@ -27,13 +27,13 @@
 
   &__link {
     font-size: $font-small;
-    color: $color-grey;
+    color: $color-white;
     transition: color 200ms ease-in-out;
 
     &:hover,
     &:active,
     &:focus {
-      color: $color-black;
+      color: $color-grey;
     }
   }
 
@@ -47,7 +47,7 @@
 
     a {
       font-size: 1.25em;
-      color: $color-darkgrey;
+      color: $color-white;
     }
   }
 }

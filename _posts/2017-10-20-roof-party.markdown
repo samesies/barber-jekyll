@@ -4,7 +4,7 @@ title: "Roof Party"
 date: 2017-10-20
 description: 
 image: /assets/images/placeholder-1.jpg
-author: 
+author: Thomas Vaeth
 tags: 
 related: 
 ---

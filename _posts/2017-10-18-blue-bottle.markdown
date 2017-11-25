@@ -4,7 +4,7 @@ title: "Blue Bottle"
 date: 2017-10-18
 description: 
 image: /assets/images/placeholder-5.jpg
-author: 
+author: Thomas Vaeth
 tags: 
 related: 
 ---

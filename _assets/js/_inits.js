@@ -26,7 +26,7 @@ $(() => {
     InfiniteScroll.init();
   }
 
-  if ($('.markdown').length) {
+  if ($('#markdown').length) {
     miscFlexVid();
     miscSocialShare();
   }

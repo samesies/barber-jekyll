@@ -41,6 +41,10 @@
 
     display: inline-block;
 
+    .footer & {
+      @include btn-split($color-white, $color-white, 2px);
+    }
+
     input {
       padding: {
         right: 1em;

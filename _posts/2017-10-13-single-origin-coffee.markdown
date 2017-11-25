@@ -4,7 +4,7 @@ title: "Single-origin Coffee"
 date: 2017-10-13
 description: 
 image: /assets/images/placeholder-21.jpg
-author: 
+author: Thomas Vaeth
 tags: 
 related: 
 ---

@@ -4,7 +4,7 @@ title: "Craft Beer Listicle"
 date: 2017-10-15
 description: 
 image: /assets/images/placeholder-16.jpg
-author: 
+author: Thomas Vaeth
 tags: 
 related: 
 ---

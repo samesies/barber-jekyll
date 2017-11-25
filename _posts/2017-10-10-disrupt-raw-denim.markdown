@@ -4,7 +4,7 @@ title: "Disrupt Raw Denim"
 date: 2017-10-10
 description: 
 image: /assets/images/placeholder-14.jpg
-author: 
+author: Thomas Vaeth
 tags: 
 related: 
 ---
