@@ -30,7 +30,7 @@ layout: default
     </div>
 
     <!-- Everything inside the #author tags pulls data from the author -->
-    {{#author}}
+    {% if page.author %}
       <div class="section-padding--none">
         <div class="grid">
           <hr class="sep"/>
@@ -39,13 +39,15 @@ layout: default
 
       <div class="section-padding">
         <div class="grid-small">
-          <span class="post__author">Posted by <a href="{{url}}" title="More By {{name}}">{{name}}</a></span>
-          {{#if bio}}
-            <p class="post__bio">{{bio}}</p>
-          {{/if}}
+          <span class="post__author">Posted by <a href="{{url}}" title="More By {{ page.author }}">{{ page.author }}</a></span>
+          {% for author in site.author %}
+            {% if author[0] == page.author %}
+              <p class="post__bio">{{ author[1] }}</p>
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
-    {{/author}}
+    {% endif %}
 
     {% include disqus.html %}
 
@@ -53,7 +55,7 @@ layout: default
 </div>
 
 <!-- Links to Previous/Next posts -->
-{% if content and page.related %}
+{% if page.related %}
   <section class="related section-padding">
     <div class="grid-xlarge">
       <h2 class="related__title">Related</h2>

@@ -3,7 +3,12 @@ layout: default
 ---
 <section class="mast section-padding--double">
   <div class="grid">
-    <h2>{{ page.tag | capitalize }}</h2>
+    <h2>
+      {% assign words = page.tag | split: ' ' %}
+      {% for word in words %}
+        {{ word | capitalize | replace: 'The', 'the' }}
+      {% endfor %}
+    </h2>
   </div>
 </section>
 

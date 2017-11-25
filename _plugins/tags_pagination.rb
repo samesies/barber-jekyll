@@ -17,7 +17,7 @@ module Jekyll
 
       (1..num_pages).each do |page|
         pager = TagPager.new(site, page, tag_posts, tag, num_pages)
-        dir = File.join('tag', tag, page > 1 ? "page/#{page}" : '')
+        dir = File.join('tag', tag.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, ''), page > 1 ? "page/#{page}" : '')
         page = TagPage.new(site, site.source, dir, tag)
         page.pager = pager
         site.pages << page
