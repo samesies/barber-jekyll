@@ -36,6 +36,10 @@ permalink: /:year/:month/:day/:title/
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
 exclude:
   - node_modules
   - .DS_Store
