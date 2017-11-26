@@ -53,13 +53,12 @@
   }
 
   &__content {
-    padding-top: 1.25em;
+    padding-top: 1em;
   }
 
   &__text {
     @extend %font-header;
+    @extend %font-size;
     @extend %text-center;
-
-    font-size: 1.1em;
   }
 }

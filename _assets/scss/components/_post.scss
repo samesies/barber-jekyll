@@ -86,6 +86,7 @@
 
   &__author {
     @extend %font-header;
+    @extend %font-size;
 
     display: block;
 
@@ -102,6 +103,8 @@
   }
 
   &__bio {
+    @extend %font-size;
+
     margin-bottom: 0;
   }
 

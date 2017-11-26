@@ -89,16 +89,13 @@
 
   &__content {
     width: 98%;
-    padding-top: 1.25em;
+    padding-top: 1em;
   }
 
   &__text {
-    font-size: 1.1em;
-    font-weight: 400;
+    @extend %font-size;
 
-    @media (min-width: $mq-small) {
-      font-size: 1.25em;
-    }
+    font-weight: 400;
   }
 
   &__pagination {
