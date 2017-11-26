@@ -55,12 +55,13 @@ layout: default
 </div>
 
 <!-- Links to Previous/Next posts -->
-{% if page.related %}
+{% assign relatedTag = page.tags | first %}
+{% if relatedTag %}
   <section class="related section-padding">
     <div class="grid-xlarge">
       <h2 class="related__title">Related</h2>
-      <div class="related__container"> 
-        {% for post in site.posts limit: 3 %}
+      <div class="related__container">
+        {% for post in site.tags[relatedTag] limit: 3 %}
           <article class="related__post">
             <a class="related__link" href="{{ post.url | prepend: site.baseurl }}">
               {% if post.image %}

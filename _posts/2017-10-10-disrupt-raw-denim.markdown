@@ -6,7 +6,6 @@ description:
 image: /assets/images/placeholder-14.jpg
 author: Thomas Vaeth
 tags: 
-related: 
 ---
 Umami thundercats 90's chia tumblr. [Dreamcatcher](http://thomasvaeth.com/) cronut neutra forage lo-fi. +1 man braid single-origin coffee affogato kinfolk selfies cornhole lumbersexual mlkshk. Meditation you probably haven't heard of them kogi wayfarers ethical bushwick hell of. 
 

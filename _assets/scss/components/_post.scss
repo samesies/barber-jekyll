@@ -118,8 +118,8 @@
   flex-direction: column;
   align-items: center;
 
-  #post &,
-  .style-guide & {
+  .post-layout &,
+  #style-guide & {
     font-family: $font-post;
   }
 
@@ -177,7 +177,7 @@
 
   h6 + hr {
 
-    .style-guide & {
+    #style-guide & {
       margin-top: 1.25rem;
     }
   }
