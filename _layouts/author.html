@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<!-- Everything inside the #author tags pulls data from the author -->
+<section class="mast section-padding--double">
+  <div class="grid-small">
+    <h2>
+      {% assign words = page.author | split: ' ' %}
+      {% for word in words %}
+        {{ word | capitalize | replace: 'The', 'the' }}
+      {% endfor %}
+    </h2>
+    {% for author in site.author %}
+      {% if author["name"] == page.author %}
+        <p class="mast__text">{{ author["bio"] }}</p>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<div class="section-padding--none">
+  <div class="grid-large">
+    <hr class="sep"/>
+  </div>
+</div>
+
+<!-- The main content area -->
+<div class="posts">
+  <div class="grid-xlarge">
+    <div class="posts__container" data-columns>
+
+      {% for post in site.posts %}
+        {% if post.author == page.author %}
+
+        <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+        {% include post-card.html %}
+
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  {% include pagination.html %}
+</div>
