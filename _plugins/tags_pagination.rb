@@ -4,7 +4,7 @@ module Jekyll
     safe true
     
     def generate(site)
-      if site.layouts.key? 'tag'
+      if site.layouts.key? "tag"
         site.tags.keys.each do |tag|
           paginate(site, tag)
         end
@@ -12,12 +12,12 @@ module Jekyll
     end
 
     def paginate(site, tag)
-      tag_posts = site.posts.find_all {|post| post.tags.include?(tag)}.sort_by {|post| -post.date.to_f}
-      num_pages = TagPager.calculate_pages(tag_posts, site.config['paginate'].to_i)
+      tag_posts = site.posts.docs.find_all {|post| post.tags.include?(tag)}.sort_by {|post| -post.date.to_f}
+      num_pages = TagPager.calculate_pages(tag_posts, site.config["paginate"].to_i)
 
       (1..num_pages).each do |page|
         pager = TagPager.new(site, page, tag_posts, tag, num_pages)
-        dir = File.join('tag', tag.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, ''), page > 1 ? "page/#{page}" : '')
+        dir = File.join("tag", tag.downcase.strip.gsub(" ", "-").gsub(/[^\w-]/, ""), page > 1 ? "page/#{page}" : "")
         page = TagPage.new(site, site.source, dir, tag)
         page.pager = pager
         site.pages << page
@@ -30,11 +30,11 @@ module Jekyll
       @site = site
       @base = base
       @dir = dir
-      @name = 'index.html'
+      @name = "index.html"
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'tag.html')
-      self.data['tag'] = tag
+      self.read_yaml(File.join(base, "_layouts"), "tag.html")
+      self.data["tag"] = tag
     end
   end
 
@@ -50,7 +50,7 @@ module Jekyll
 
     def to_liquid
       liquid = original_to_liquid
-      liquid['tag'] = @tag
+      liquid["tag"] = @tag
       liquid
     end
   end

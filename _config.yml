@@ -14,16 +14,21 @@ url: "http://barber.samesies.io"
 twitter_username: thomasvaeth
 default_img: /assets/images/seo.jpg
 social:
-  twitter: https://twitter.com/thomasvaeth
-  instagram: https://www.instagram.com/thomas.vaeth/
-  linkedin: https://www.linkedin.com/in/thomasvaeth/
-  github: https://github.com/samesies
-  codepen: https://codepen.io/thomasvaeth/
+  - name: twitter
+    url: https://twitter.com/thomasvaeth
+  - name: instagram
+    url: https://www.instagram.com/thomas.vaeth/
+  - name: linkedin
+    url: https://www.linkedin.com/in/thomasvaeth/
+  - name: github
+    url: https://github.com/samesies
+  - name: codepen
+    url: https://codepen.io/thomasvaeth/
 
 # Author settings
 author:
-  Thomas Vaeth: >
-    Thomas Vaeth was born in New York, raised in Pennsylvania, and transplanted in Washington. He was a Web Developer at Urban Influence, but now he's a Software Engineer at Getty Images.
+  - name: Thomas Vaeth
+    bio: Thomas Vaeth was born in New York, raised in Pennsylvania, and transplanted in Washington. He was a Web Developer at Urban Influence, but now he's a Software Engineer at Getty Images.
 
 # Build settings
 markdown: kramdown

@@ -41,8 +41,8 @@ layout: default
         <div class="grid-small">
           <span class="post__author">Posted by <a href="{{url}}" title="More By {{ page.author }}">{{ page.author }}</a></span>
           {% for author in site.author %}
-            {% if author[0] == page.author %}
-              <p class="post__bio">{{ author[1] }}</p>
+            {% if author["name"] == page.author %}
+              <p class="post__bio">{{ author["bio"] }}</p>
             {% endif %}
           {% endfor %}
         </div>

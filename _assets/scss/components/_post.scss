@@ -190,6 +190,10 @@
     @media (min-width: $mq-small) {
       font-size: 1.25em;
     }
+
+    img {
+      margin-bottom: 0;
+    }
   }
 
   blockquote {
