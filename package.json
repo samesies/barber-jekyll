@@ -18,7 +18,7 @@
     "theme"
   ],
   "dependencies": {
-    "jquery": "^3.2.1",
+    "jquery": "2.2.4",
     "salvattore": "^1.0.9"
   },
   "devDependencies": {

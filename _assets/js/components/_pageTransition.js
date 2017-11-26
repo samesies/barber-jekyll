@@ -1,4 +1,9 @@
 // ----------------------------------------------
+// Imports
+// ----------------------------------------------
+import $ from 'jquery';
+
+// ----------------------------------------------
 // Page Transition
 // ----------------------------------------------
 const PageTransition = (() => {
@@ -8,8 +13,9 @@ const PageTransition = (() => {
   return {
     settings() {
       return {
-        transitionLinks: document.querySelectorAll(`a[href^="http://${top.location.host.toString()}"]:not(${noTransition}), a[href^="/"]:not(${noTransition}), a[href^="./"]:not(${noTransition}), a[href^="../"]:not(${noTransition})`),
-        body: document.body,
+        transitionLinks: $(`a[href^="http://${top.location.host.toString()}"], a[href^="/"], a[href^="./"], a[href^="../"]`).not(`.${noTransition}`),
+        body: $('body'),
+        window: $(window),
         exit: 400,
         entrance: 200
       };
@@ -21,7 +27,7 @@ const PageTransition = (() => {
         this.bindEvents();
       } else {
         setTimeout(() => {
-          document.body.classList.add('js-page-loaded');
+          $('body').addClass('js-page-loaded');
         }, 600);
       }
     },
@@ -29,30 +35,42 @@ const PageTransition = (() => {
     bindEvents() {
       this.loadingClasses();
       this.transitionPage();
+      this.firefox();
+      this.safari();
     },
 
     loadingClasses() {
       setTimeout(() => {
-        s.body.classList.add('js-page-loaded');
+        s.body.addClass('js-page-loaded');
       }, s.entrance);
     },
 
     transitionPage() {
-      [].forEach.call(s.transitionLinks, link => {
-        link.addEventListener('click', e => {
-          if (s.body.classList.contains(noTransition) || e.metaKey || e.ctrlKey || e.shiftKey) {
-            return;
-          }
-          e.preventDefault();
+      s.transitionLinks.on('click', e => {
+        if (s.body.hasClass(noTransition) || e.metaKey || e.ctrlKey || e.shiftKey) {
+          return;
+        }
+        e.preventDefault();
 
-          const linkLocation = link.href;
+        const linkLocation = $(e.currentTarget).attr('href');
 
-          s.body.classList.add('js-page-exiting');
+        s.body.addClass('js-page-exiting');
 
-          setTimeout(() => {
-            window.location = linkLocation;
-          }, s.exit);
-        });
+        setTimeout(() => {
+          window.location = linkLocation;
+        }, s.exit);
+      });
+    },
+
+    firefox() {
+      s.window.unload(() => {
+        s.window.unbind('unload');
+      });
+    },
+
+    safari() {
+      s.window.bind('pageshow', e => {
+        if (e.originalEvent.persisted) window.location.reload();
       });
     }
   };

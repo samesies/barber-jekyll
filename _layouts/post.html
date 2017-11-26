@@ -63,7 +63,7 @@ layout: default
       <div class="related__container">
         {% for post in site.tags[relatedTag] limit: 3 %}
           <article class="related__post">
-            <a class="related__link" href="{{ post.url | prepend: site.baseurl }}">
+            <a class="related__link" href="{{ post.url | absolute_url }}">
               {% if post.image %}
                 <figure class="related__img">
                   <img src="{{ post.image }}" alt="{{ post.title }}"/>

@@ -18,12 +18,8 @@ const miscFlexVid = () => {
 // Social Share
 // ----------------------------------------------
 const miscSocialShare = () => {
-  const socialArr = $('.post__social a');
-
-  socialArr.each((idx, social) => {
-    $(social).on('click', () => {
-      window.open($(social).attr('href'), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=550,width=550');
-    });
+  $('.post__social a').on('click', e => {
+    window.open($(e.currentTarget).attr('href'), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=550,width=550');
   });
 };
 
