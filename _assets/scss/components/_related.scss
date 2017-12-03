@@ -53,7 +53,7 @@
   }
 
   &__content {
-    padding-top: 1em;
+    @extend .posts__content;
   }
 
   &__text {

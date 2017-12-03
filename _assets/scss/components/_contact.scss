@@ -2,43 +2,87 @@
 // Contact
 //---------------------------------------------- 
 .contact {
-  @media (min-width: $mq-med) {
-    display: flex;
-    min-height: calc(100vh - 3em);
+  @extend %flex-center;
 
-    & > * {
-      flex-basis: 50%;
-      max-width: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9;
+
+  height: 100vh;
+  width: 100%;
+
+  background-color: rgba($color-black, 0.9);
+  opacity: 0;
+  transition: opacity 600ms ease-in-out;
+
+  .js-popup-open & {
+    z-index: 9999;
+
+    opacity: 1;
+  }
+
+  .js-popup-closing & {
+    z-index: 9999;
+
+    opacity: 0;
+  }
+
+  &__container {
+    @extend %box-shadow;
+
+    width: 100%;
+    max-width: $max-width--lg;
+
+    background-color: $color-white;
+
+    @media (min-width: $mq-med) {
+      display: flex;
+      min-height: 34em;
+      width: 80%;
+
+      & > * {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+    }
+
+    @media (min-width: $mq-xlarge) {
+      width: 65%;
+    }
+
+    .js-popup-open & {
+      animation: scale 300ms ease-in-out both;
     }
   }
 
   &__img {
     position: relative;
 
-    height: 18em;
+    // height: 18em;
 
     background-color: $color-lightgrey;
 
-    @media (min-width: $mq-small) {
-      height: 36em;
-    }
+    // @media (min-width: $mq-small) {
+    //   height: 36em;
+    // }
 
     @media (min-width: $mq-med) {
       height: auto;
     }
   }
 
-  &__mast {
-    @extend %text-center;
+  &__content {
+    @extend %flex-center;
+
+    flex-direction: column;
+
+    & > * {
+      width: 100%;
+    }
   }
 
-  &__text {
+  &__mast {
     @extend %text-center;
-
-    margin-bottom: 3em;
-
-    p {
-      margin-bottom: 0;
-    }
   }
 }

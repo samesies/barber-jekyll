@@ -8,6 +8,7 @@ import InfiniteScroll from './components/_infiniteScroll.js';
 import MailChimp from './components/_mailChimp.js';
 import { miscFlexVid, miscSocialShare, miscFixedFooter } from './components/_miscellaneous.js';
 import PageTransition from './components/_pageTransition.js';
+import Popup from './components/_popup.js';
 
 // ----------------------------------------------
 // Inits
@@ -34,6 +35,7 @@ $(() => {
 
   if ($('#form').length) {
     Formspree.init();
+    Popup.init();
   }
 
 });

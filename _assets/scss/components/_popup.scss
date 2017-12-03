@@ -1,0 +1,51 @@
+//----------------------------------------------
+// Popup
+//---------------------------------------------- 
+.popup {
+  
+  &__close {
+    position: fixed;
+    top: 1.5em;
+    right: 1.5em;
+    z-index: 999;
+    
+    height: 2.25rem;
+    width: 2rem;
+
+    border: none;
+    cursor: pointer;
+  }
+
+  &__exit {
+    position: absolute;
+    top: 1em;
+    z-index: 1;
+
+    display: block;
+   
+    cursor: pointer;
+
+    &:after, 
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      
+      display: block;
+      height: 1px;
+      width: 1.855555rem;
+
+      background-color: $color-white;
+      zoom: 1;
+    }
+
+    &:after {
+      transform: rotate(45deg);
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+  }
+}

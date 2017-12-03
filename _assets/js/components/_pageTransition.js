@@ -70,7 +70,9 @@ const PageTransition = (() => {
 
     safari() {
       s.window.bind('pageshow', e => {
-        if (e.originalEvent.persisted) window.location.reload();
+        if (e.originalEvent.persisted) {
+          window.location.reload();
+        }
       });
     }
   };

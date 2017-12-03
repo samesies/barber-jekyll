@@ -33,7 +33,7 @@ const miscFixedFooter = () => {
 
   $(window).on('resize', () => {
     footerHeight = $('.footer').outerHeight();
-    
+
     $('body').css('margin-bottom', footerHeight);
   });
 };
