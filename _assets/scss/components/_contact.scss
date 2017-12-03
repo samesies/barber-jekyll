@@ -11,7 +11,12 @@
 
   height: 100vh;
   width: 100%;
+  padding: {
+    right: 1em;
+    left: 1em;
+  }
 
+  visibility: hidden;
   background-color: rgba($color-black, 0.9);
   opacity: 0;
   transition: opacity 600ms ease-in-out;
@@ -19,12 +24,14 @@
   .js-popup-open & {
     z-index: 9999;
 
+    visibility: visible;
     opacity: 1;
   }
 
   .js-popup-closing & {
     z-index: 9999;
 
+    visibility: visible;
     opacity: 0;
   }
 
@@ -36,15 +43,26 @@
 
     background-color: $color-white;
 
-    @media (min-width: $mq-med) {
+    @media (min-width: $mq-small) {
       display: flex;
-      min-height: 34em;
-      width: 80%;
 
       & > * {
-        flex-basis: 50%;
-        max-width: 50%;
+
+        &:first-child {
+          flex-basis: 55%;
+          max-width: 55%;
+        }
+
+        &:last-child {
+          flex-basis: 45%;
+          max-width: 45%;
+        }
       }
+    }
+
+    @media (min-width: $mq-med) {
+      min-height: 34em;
+      width: 80%;
     }
 
     @media (min-width: $mq-xlarge) {
@@ -57,18 +75,14 @@
   }
 
   &__img {
-    position: relative;
+    display: none;
 
-    // height: 18em;
+    @media (min-width: $mq-small) {
+      position: relative;
 
-    background-color: $color-lightgrey;
+      display: block;
 
-    // @media (min-width: $mq-small) {
-    //   height: 36em;
-    // }
-
-    @media (min-width: $mq-med) {
-      height: auto;
+      background-color: $color-lightgrey;
     }
   }
 

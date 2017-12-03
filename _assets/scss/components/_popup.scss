@@ -2,11 +2,15 @@
 // Popup
 //---------------------------------------------- 
 .popup {
-  
+
+  &__open {
+    cursor: pointer;
+  }
+
   &__close {
     position: fixed;
-    top: 1.5em;
-    right: 1.5em;
+    top: 1em;
+    right: 1em;
     z-index: 999;
     
     height: 2.25rem;
@@ -14,6 +18,11 @@
 
     border: none;
     cursor: pointer;
+
+    @media (min-width: $mq-small) {
+      top: 1.5em;
+      right: 1.5em;
+    }
   }
 
   &__exit {
