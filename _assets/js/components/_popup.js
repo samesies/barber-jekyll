@@ -14,8 +14,6 @@ const Popup = (() => {
       return {
         html: $('html'),
         body: $('body'),
-        // ajax: $('.ajax'),
-        // ajaxClose: $('.ajax__close'),
         open: 'js-popup-open',
         overflow: 'js-overflow',
         closing: 'js-popup-closing'
@@ -29,7 +27,6 @@ const Popup = (() => {
 
     bindEvents() {
       this.togglePopup();
-      // this.ajaxClose();
     },
 
     togglePopup() {
@@ -38,15 +35,17 @@ const Popup = (() => {
         s.html.addClass(s.overflow);
       });
 
-      $('.popup__close').on('click', () => {
-        Popup.popupClose();
+      $('.popup').on('click', e => {
+        if (!$(e.target).closest('.popup__container').length) {
+          Popup.popupClose();
+        }
       });
 
       s.body.on('keyup', e => {
         if (s.body.hasClass(s.open) && e.which === 27) {
           Popup.popupClose();
         }
-      })
+      });
     },
 
     popupClose() {
@@ -57,21 +56,7 @@ const Popup = (() => {
       setTimeout(() => {
         s.body.removeClass(s.closing);
       }, 800);
-    },
-
-    // ajaxClose() {
-    //   s.ajaxClose.on('click', function() {
-    //     s.ajax.removeClass('js-ajax');
-    //     $(this).removeClass('js-ajax-error');
-    //   });
-
-    //   s.body.on('keyup', function(e) {
-    //     if (s.ajaxClose.hasClass('js-ajax-error') && e.which === 27) {
-    //       s.ajax.removeClass('js-ajax');
-    //       s.ajaxClose.removeClass('js-ajax-error');
-    //     }
-    //   });
-    // }
+    }
   }
 })();
 

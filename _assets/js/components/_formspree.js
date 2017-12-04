@@ -12,10 +12,15 @@ const Formspree = (() => {
   return {
     settings() {
       return {
+        html: $('html'),
+        body: $('body'),
         form: $('#form'),
         formAction: $('#form').attr('action'),
         formMessage: $('.form__message'),
-        animation: 'fade-in'
+        animation: 'fade-in',
+        open: 'js-popup-open',
+        overflow: 'js-overflow',
+        closing: 'js-popup-closing'
       };
     },
 
@@ -38,11 +43,14 @@ const Formspree = (() => {
           data: s.form.serialize(),
           dataType: 'json',
           success: () => {
-            s.formMessage.removeClass(s.animation);
-            s.formMessage.addClass(s.animation);
-            s.formMessage.text('Message Sent');
+            s.body.addClass(s.closing);
+            s.body.removeClass(s.open);
+            s.html.removeClass(s.overflow);
 
-            s.form[0].reset();
+            setTimeout(() => {
+              s.form[0].reset();
+              s.body.removeClass(s.closing);
+            }, 800);
           },
           error: () => {
             setTimeout(() => {
