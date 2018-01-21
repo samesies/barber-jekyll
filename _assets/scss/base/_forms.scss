@@ -45,10 +45,15 @@ textarea {
   }
 }
 
+textarea {
+  resize: none;
+}
+
 input[type="submit"] {
   position: relative;
   z-index: $z-1;
 
+  font-weight: 700;
   cursor: pointer;
 }
 

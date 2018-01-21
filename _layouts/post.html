@@ -2,12 +2,12 @@
 layout: default
 ---
 <div class="post">
-  <article>
+  <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="post__header section-padding--double">
       <div class="grid-small">
-        <h2>{{ page.title }}</h2>
+        <h2 itemprop="name headline">{{ page.title }}</h2>
 
-        <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %b %Y" }}</time>
+        <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b %Y" }}</time>
       </div>
     </div>
 
@@ -21,7 +21,7 @@ layout: default
 
     <div class="post__content section-padding">
       <div class="grid">
-        <div id="markdown">
+        <div id="markdown" itemprop="articleBody">
           {{content}}
         </div>
 

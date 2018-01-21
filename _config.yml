@@ -29,7 +29,7 @@ social:
 author:
   - name: Thomas Vaeth
     bio: Thomas Vaeth was born in New York, raised in Pennsylvania, and transplanted in Washington. He was a Web Developer at Urban Influence, but now he's a Software Engineer at Getty Images.
-    url: 
+    url: http://thomasvaeth.com
 
 # Build settings
 markdown: kramdown

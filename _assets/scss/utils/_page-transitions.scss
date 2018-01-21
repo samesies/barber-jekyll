@@ -1,7 +1,8 @@
 //----------------------------------------------
 // Page Transition
 //---------------------------------------------- 
-main {
+main,
+footer {
   opacity: 0;
 
   .js-page-loaded & {
@@ -14,21 +15,6 @@ main {
     transition: opacity 400ms ease-in-out;
   }
 }
-
-footer {
-  opacity: 0;
-
-  .js-page-loaded & {
-    opacity: 1;
-    transition-delay: 600ms;
-  }
-
-  .js-page-exiting & {
-    opacity: 0;
-    transition-delay: 0s;
-  }
-}
-
 
 .error-template {
 

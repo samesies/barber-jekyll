@@ -1,12 +1,12 @@
-<article class="posts__post">
-  <a class="posts__link" href="{{ post.url | absolute_url }}">
+<article class="posts__post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+  <a class="posts__link" href="{{ post.url | absolute_url }}" itemprop="url">
     {% if post.image %}
       <figure class="posts__img">
-        <img class="wow" src="{{ post.image }}" alt="{{ post.title }}"/>
+        <img class="wow" src="{{ post.image }}" alt="{{ post.title }}" itemprop="image"/>
       </figure>
     {% endif %}
     <div class="posts__content">
-      <h2 class="posts__text"><strong>{{ post.title }}</strong> — {{ post.content | strip_html | truncatewords: 35, "" }}</h2>
+      <h2 class="posts__text"><strong itemprop="name">{{ post.title }}</strong> — <span itemprop="description">{{ post.content | strip_html | truncatewords: 35, "" }}</span></h2>
     </div>
   </a>
 </article>
