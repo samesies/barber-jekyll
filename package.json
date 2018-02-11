@@ -4,7 +4,8 @@
   "demo": "http://barber.samesies.io",
   "version": "1.0.0",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "jekyll build && s3-website deploy _site"
   },
   "author": {
     "name": "Samesies",
@@ -38,6 +39,7 @@
     "gulp-stylelint": "^5.0.0",
     "gulp-uglify": "^3.0.0",
     "gulp-zip": "^4.0.0",
+    "s3-website": "^3.3.0",
     "stylelint-config-standard": "^17.0.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"

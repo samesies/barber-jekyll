@@ -109,6 +109,7 @@
     @extend %font-header;
 
     position: relative;
+    z-index: 1;
 
     cursor: pointer;
 

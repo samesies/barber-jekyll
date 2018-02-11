@@ -2,11 +2,13 @@
 // Imports
 // ----------------------------------------------
 import $ from 'jquery';
+import './vendor/_transition.js';
+import './vendor/_zoom.js';
 import WOW from './vendor/_wow.js';
 import Formspree from './components/_formspree.js';
 import InfiniteScroll from './components/_infiniteScroll.js';
 import MailChimp from './components/_mailChimp.js';
-import { miscFlexVid, miscSocialShare } from './components/_miscellaneous.js';
+import { miscFlexVid, miscZoom, miscSocialShare } from './components/_miscellaneous.js';
 import PageTransition from './components/_pageTransition.js';
 import Popup from './components/_popup.js';
 
@@ -29,6 +31,7 @@ $(() => {
 
   if ($('#markdown').length) {
     miscFlexVid();
+    miscZoom();
     miscSocialShare();
   }
 

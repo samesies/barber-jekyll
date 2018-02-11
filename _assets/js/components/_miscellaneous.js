@@ -15,6 +15,19 @@ const miscFlexVid = () => {
 };
 
 // ----------------------------------------------
+// Zoom
+// ----------------------------------------------
+const miscZoom = () => {
+  const imgArr = $('.post__content img');
+  
+  imgArr.each((idx, img) => {
+    if (img.src.indexOf('full') === -1) {
+      $(img).attr('data-action', 'zoom');
+    }
+  });
+};
+
+// ----------------------------------------------
 // Social Share
 // ----------------------------------------------
 const miscSocialShare = () => {
@@ -28,5 +41,6 @@ const miscSocialShare = () => {
 // ----------------------------------------------
 module.exports = {
   miscFlexVid,
+  miscZoom,
   miscSocialShare
 };
