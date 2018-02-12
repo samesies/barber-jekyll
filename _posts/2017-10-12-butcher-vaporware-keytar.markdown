@@ -16,6 +16,6 @@ Slow-carb 90's blue bottle godard meggings +1 helvetica. Chillwave tumeric bicyc
 
 Microdosing shoreditch meggings sustainable. Seitan etsy mumblecore chambray slow-carb, glossier jianbing. Pabst crucifix brooklyn cliche, master cleanse poutine art party four loko readymade knausgaard selvage actually fashion axe. Four loko franzen kogi ethical tofu salvia. 
 
-![Placeholder](/assets/images/placeholder-31.jpg)
+![Placeholder](/assets/images/placeholder-21.jpg)
 
 Pinterest meditation raclette, hella roof party whatever hashtag godard. Intelligentsia brunch migas next level flannel. DIY affogato chillwave ethical kombucha schlitz. Wayfarers synth plaid tbh green juice iPhone twee coloring book master cleanse activated charcoal ramps williamsburg whatever cronut. Humblebrag kitsch dreamcatcher normcore freegan swag try-hard. Distillery cred palo santo squid. Wolf ramps cred iceland. Vaporware brooklyn hexagon, fam irony pour-over yuccie. Meh drinking vinegar poutine, chia sriracha pinterest bespoke palo santo kinfolk PBR&B lyft pabst.

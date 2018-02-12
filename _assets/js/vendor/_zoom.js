@@ -164,7 +164,13 @@ window.$ = window.jQuery = jquery;
 
     this._overlay           = document.createElement('div')
     this._overlay.className = 'zoom-overlay'
+    this._close             = document.createElement('div')
+    this._close.className   = 'zoom-overlay__close'
+    this._exit             = document.createElement('div')
+    this._exit.className   = 'zoom-overlay__exit'
 
+    this._close.appendChild(this._exit)
+    this._overlay.appendChild(this._close)
     document.body.appendChild(this._overlay)
 
     this._calculateZoom()

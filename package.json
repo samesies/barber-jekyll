@@ -4,8 +4,9 @@
   "demo": "http://barber.samesies.io",
   "version": "1.0.0",
   "scripts": {
-    "start": "gulp",
-    "deploy": "jekyll build && s3-website deploy _site"
+    "start": "bundle exec jekyll serve",
+    "gulp": "gulp",
+    "deploy": "bundle exec jekyll build && s3-website deploy _site"
   },
   "author": {
     "name": "Samesies",

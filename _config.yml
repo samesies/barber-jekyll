@@ -25,6 +25,10 @@ social:
   - name: codepen
     url: https://codepen.io/thomasvaeth/
 
+# MailChimp settings
+mailchimp_action: https://samesies.us17.list-manage.com/subscribe/post-json?u=66ddf555dab480e6a8606430b&amp;id=89b3ee034f
+mailchimp_input: b_66ddf555dab480e6a8606430b_89b3ee034f
+
 # Author settings
 author:
   - name: Thomas Vaeth

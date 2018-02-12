@@ -10,4 +10,17 @@
   z-index: $z-999;
 
   background: rgba($color-white, 0.9);
+
+  &__close {
+    @extend .popup__close;
+  }
+
+  &__exit {
+    @extend .popup__exit;
+
+    &:after, 
+    &:before {
+      background-color: $color-black;
+    }
+  }
 }

@@ -15,6 +15,6 @@ Helvetica green juice sustainable pinterest 8-bit VHS. Crucifix fixie pinterest 
 
 Intelligentsia farm-to-table shabby chic XOXO normcore. Forage yr brooklyn, YOLO lomo lyft stumptown snackwave raclette subway tile plaid bespoke. Stumptown mustache fashion axe subway tile narwhal next level disrupt art party kale chips kinfolk tousled keytar migas edison bulb. 
 
-![Placeholder](/assets/images/placeholder-31.jpg#full)
+![Placeholder](/assets/images/placeholder-21.jpg#full)
 
 Cronut waistcoat tote bag pickled, narwhal yr tofu health goth neutra poke. Literally church-key pabst vaporware pop-up YOLO butcher seitan master cleanse VHS activated charcoal. Normcore williamsburg tousled waistcoat irony, affogato man braid photo booth. Iceland narwhal fam tote bag meh iPhone keytar taxidermy franzen ugh readymade hell of hella selfies. Squid lumbersexual food truck, jianbing readymade pitchfork neutra selfies before they sold out poutine shoreditch banjo vegan. Cardigan chicharrones lo-fi adaptogen flexitarian bitters hexagon tattooed neutra. Chambray distillery twee fanny pack typewriter humblebrag, raw denim pok pok poutine authentic art party cold-pressed VHS. Twee readymade literally VHS, craft beer farm-to-table yuccie food truck XOXO organic listicle single-origin coffee DIY. Umami palo santo godard kombucha.
