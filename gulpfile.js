@@ -36,15 +36,6 @@ gulp.task('sass', () => {
   .pipe(gulp.dest('./assets/css'));
 });
 
-gulp.task('amp', () => {
-  return gulp.src('./_assets/scss/amp.scss')
-  .pipe(sass().on('error', sass.logError))
-  .pipe(autoprefixer({browsers: ['last 2 versions'], cascade: false}))
-  .pipe(cleanCSS())
-  .pipe(rename({suffix: '.min'}))
-  .pipe(gulp.dest('./assets/css'));
-});
-
 gulp.task('lint', () => {
   return gulp.src([
     './_assets/js/components/_formspree.js',
@@ -52,6 +43,7 @@ gulp.task('lint', () => {
     './_assets/js/components/_mailChimp.js',
     './_assets/js/components/_miscellaneous.js',
     './_assets/js/components/_pageTransition.js',
+    './_assets/js/components/_popup.js',
     './_assets/js/_inits.js'
   ])
   .pipe(eslint())
@@ -81,10 +73,10 @@ gulp.task('zip', () => {
   .pipe(gulp.dest('../'))
 });
 
-gulp.task('build', ['sass', 'amp', 'browserify']);
+gulp.task('build', ['sass', 'browserify']);
 
 gulp.task('watch', () => {
-  gulp.watch('./_assets/scss/**/*.scss', ['sass', 'amp']);
+  gulp.watch('./_assets/scss/**/*.scss', ['sass']);
   gulp.watch('./_assets/js/**/*.js', ['browserify']);
 });
 

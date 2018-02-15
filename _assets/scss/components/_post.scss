@@ -3,9 +3,9 @@
 //---------------------------------------------- 
 .post {
 
-  .amp-template & {
-    background-color: $color-white;
-  }
+  // .amp-template & {
+  //   background-color: $color-white;
+  // }
 
   &__header {
     @extend %text-center;
@@ -46,9 +46,9 @@
     }
   }
 
-  &__amp-img {
-    padding: 1em;
-  }
+  // &__amp-img {
+  //   padding: 1em;
+  // }
 
   &__content {
     border-top: $border;
