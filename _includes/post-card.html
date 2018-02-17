@@ -2,7 +2,7 @@
   <a class="posts__link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url">
     {% if post.image %}
       <figure class="posts__img">
-        <img class="wow" src="{{ post.image }}" alt="{{ post.title }}" itemprop="image"/>
+        <img src="{{ post.image }}" alt="{{ post.title }}" data-aos="fade-in" itemprop="image"/>
       </figure>
     {% endif %}
     <div class="posts__content">

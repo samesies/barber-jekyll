@@ -19,7 +19,7 @@ const miscFlexVid = () => {
 // ----------------------------------------------
 const miscZoom = () => {
   const imgArr = $('.post__content img');
-  
+
   imgArr.each((idx, img) => {
     if (img.src.indexOf('full') === -1) {
       $(img).attr('data-action', 'zoom');

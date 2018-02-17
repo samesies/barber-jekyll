@@ -5,8 +5,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "bundle exec jekyll serve",
-    "gulp": "gulp",
-    "deploy": "bundle exec jekyll build && s3-website deploy _site"
+    "deploy": "gulp build && bundle exec jekyll build && s3-website deploy _site",
+    "gulp": "gulp"
   },
   "author": {
     "name": "Samesies",
@@ -20,6 +20,7 @@
     "theme"
   ],
   "dependencies": {
+    "aos": "^2.2.0",
     "jquery": "2.2.4",
     "salvattore": "^1.0.9"
   },

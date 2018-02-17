@@ -2,9 +2,9 @@
 // Imports
 // ----------------------------------------------
 import $ from 'jquery';
+import AOS from 'aos';
 import './vendor/_transition.js';
 import './vendor/_zoom.js';
-import WOW from './vendor/_wow.js';
 import Formspree from './components/_formspree.js';
 import InfiniteScroll from './components/_infiniteScroll.js';
 import MailChimp from './components/_mailChimp.js';
@@ -17,11 +17,12 @@ import Popup from './components/_popup.js';
 // ----------------------------------------------
 $(() => {
 
-  // WOW
-  const wow = new WOW();
-
   // Inits
-  wow.init();
+  AOS.init({
+    duration: 600,
+    easing: 'ease-in-out',
+    once: true
+  });
   MailChimp.init();
   PageTransition.init();
 
