@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "bundle exec jekyll serve",
+    "build": "bundle exec jekyll build",
     "deploy": "gulp build && bundle exec jekyll build && s3-website deploy _site",
     "gulp": "gulp"
   },
