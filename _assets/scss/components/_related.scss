@@ -51,10 +51,6 @@
     @extend .posts__img;
   }
 
-  &__content {
-    @extend .posts__content;
-  }
-
   &__text {
     @extend %font-header;
     @extend %font-size;

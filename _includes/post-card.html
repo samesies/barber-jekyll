@@ -5,7 +5,7 @@
         <img src="{{ post.image }}" alt="{{ post.title }}" data-aos="fade-in" itemprop="image"/>
       </figure>
     {% endif %}
-    <div class="posts__content">
+    <div>
       <h2 class="posts__text"><strong itemprop="name">{{ post.title }}</strong> — <span itemprop="description">{{ post.content | strip_html | truncatewords: 35, "" }}</span></h2>
     </div>
   </a>

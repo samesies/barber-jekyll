@@ -77,16 +77,14 @@
   }
 
   &__img {
+    margin-bottom: 1em;
+
     background-color: $color-lightgrey;
     transition: transform 400ms ease-in-out;
 
     img {
       display: block;
     }
-  }
-
-  &__content {
-    padding-top: 1em;
   }
 
   &__text {
