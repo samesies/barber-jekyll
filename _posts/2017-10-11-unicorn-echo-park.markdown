@@ -6,6 +6,9 @@ description:
 image: /assets/images/placeholder-10.jpg
 author: Thomas Vaeth
 tags: 
+  - Mixtape
+  - Moon Drinking
+  - Kale
 ---
 Mlkshk cronut try-hard, microdosing poke man bun kinfolk normcore intelligentsia YOLO helvetica. Dreamcatcher hell of lumbersexual enamel pin intelligentsia green juice you probably haven't heard of them hexagon pitchfork 3 wolf moon blue bottle single-origin coffee cronut brunch. 
 
