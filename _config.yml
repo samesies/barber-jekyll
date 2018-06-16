@@ -13,7 +13,6 @@ description: >
 url: http://barber.samesies.io
 twitter_username: thomasvaeth
 default_img: /assets/images/seo.jpg
-contact_img: /assets/images/placeholder-28.jpg
 social:
   - name: twitter
     url: https://twitter.com/thomasvaeth
@@ -25,6 +24,10 @@ social:
     url: https://github.com/samesies
   - name: codepen
     url: https://codepen.io/thomasvaeth/
+
+# Contact settings
+contact_img: /assets/images/placeholder-28.jpg
+formcarry: https://formcarry.com/s/HkIo0nMb7
 
 # Disqus settings
 disqus: test-apkdzgmqhj

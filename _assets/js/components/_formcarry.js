@@ -4,9 +4,9 @@
 import $ from 'jquery';
 
 // ----------------------------------------------
-// Formspree
+// Formcarry
 // ----------------------------------------------
-const Formspree = (() => {
+const Formcarry = (() => {
   let s;
 
   return {
@@ -68,4 +68,4 @@ const Formspree = (() => {
 // ----------------------------------------------
 // Exports
 // ----------------------------------------------
-export default Formspree;
+export default Formcarry;

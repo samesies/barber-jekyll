@@ -42,7 +42,6 @@ description: >
 url: http://barber.samesies.io
 twitter_username: thomasvaeth
 default_img: /assets/images/seo.jpg
-contact_img: /assets/images/placeholder-28.jpg
 social:
   - name: twitter
     url: https://twitter.com/thomasvaeth
@@ -54,6 +53,10 @@ social:
     url: https://github.com/samesies
   - name: codepen
     url: https://codepen.io/thomasvaeth/
+
+# Contact settings
+contact_img: /assets/images/placeholder-28.jpg
+formcarry: https://formcarry.com/s/HkIo0nMb7
 
 # Disqus settings
 disqus: test-apkdzgmqhj
@@ -69,7 +72,7 @@ author:
     url: http://thomasvaeth.com
 ```
 
-You can change the email address the [contact form](#contact-form) is sent to, add Google Analytics, change the SEO settings, grow your website with additional authors, and much more.
+You can change the URL the [contact form](#contact-form) is sent to, add Google Analytics, change the SEO settings, grow your website with additional authors, and much more.
 
 ### Create Posts
 All posts go upder the ````_posts```` directory. You can also have a ````_drafts```` directory with posts that will on your development page, but not in production.
@@ -109,11 +112,11 @@ You can create a navigation in ````_includes/navigation.html````. Visitors can b
 ***
 
 ### Contact Form
-The form uses [Formspree](https://formspree.io/) to send submitted messages straight to your inbox. The image on the popup is the the ````contact_img```` variable and them email the forms sends to is the ````email```` variable in ````_config.yml```` (see [Update Settings](#update-settings)).
+The form uses [Formcarry](https://formcarry.com/) to send submitted messages straight to your inbox. The image on the popup is the the ````contact_img```` variable and the URL the forms sends to is the ````formcarry```` variable in ````_config.yml```` (see [Update Settings](#update-settings)).
 
 ![Contact Form](http://samesies.io/assets/images/barber/doc/framed-contact-form.jpg "Contact Form")
 
-You do have to set the email address where you want to receive the form (you can even set the subject too). This file can be found in ````_includes/formspree.hbs````. You can change the subject of the email or the labels of the form here. After everything is set you will need to submit a message to yourself to confirm the email address is correct.
+This file can be found in ````_includes/formscarry.html````. You can change the labels of the form here. After everything is set you will need to submit a message to yourself to confirm everything is correct.
 
 ### Social Media Links
 [Font Awesome](http://fontawesome.io/) is used for the social media icons. The icons in the theme can be found in ````_includes/share.html```` and ````_includes/social.html````. The icons in ````_includes/share.html```` do not need to be edited unless you want to remove a certain website; however, the ones in ````_includes/social.html```` do have to be changed. You can follow the example that has been provided in ````_config.yml```` for you to link to all of your social media accounts  (see [Update Settings](#update-settings)). The naming convention has not changed from the instructions provided on Font Awesome.
@@ -147,7 +150,7 @@ The source code is broken down to make finding what you need as easy as possible
 |   ├── contact.html
 |   ├── disqus.html
 |   ├── footer.html
-|   ├── formspree.html
+|   ├── formcarry.html
 |   ├── head.html
 |   ├── header.html
 |   ├── navigation.html
