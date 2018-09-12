@@ -9,13 +9,13 @@ should be replaced with your own Disqus site-id.
     <div id="disqus_thread"></div>
     <script>
       var disqus_config = function () {
-        this.page.url = '{{url absolute="true"}}';
-        this.page.identifier = 'ghost-{{comment_id}}';
+        this.page.url = '{{ page.url | absolute_url }}';
+        this.page.identifier = '{{ page.url | absolute_url }}';
       };
       (function() {
         var d = document, s = d.createElement('script');
         s.src = 'https://{{ site.disqus }}.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
+        s.setAttribute('data-timestamp', + new Date());
         (d.head || d.body).appendChild(s);
       })();
     </script>
