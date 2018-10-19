@@ -23,6 +23,27 @@ Barber is a minimal blog theme built for Jekyll. The blog theme features a mason
 ### Installation
 Jekyll requires all dependencies to be saved in the ````Gemfile````. Run ````bundle install```` (Install [Bundler](http://bundler.io/) if it is not already) on your command line after downloading or cloning the theme. You can then run ````bundle exec jekyll serve```` or ````npm start```` to see your development site. Run ````bundle exec jekyll build```` or ````npm run build```` to build a production ready site for deployment.
 
+### Gulp
+This Jekyll is using Gulp. Therefore, if you want a further customization, please install Gulp
+
+1. Docker run --rm -it -v "$(pwd)":/app evanshunt/taskrunner npm install
+   - docker run --rm -it -v "$(pwd)":/app evanshunt/taskrunner npm install
+   - docker run --rm -it -v "$(pwd)":/app evanshunt/taskrunner gulp build
+
+You will see the following messages if it is finished
+```
+[20:08:18] Using gulpfile /app/gulpfile.js
+[20:08:18] Starting 'sass'...
+[20:08:18] Starting 'browserify'...
+[20:08:19] Finished 'sass' after 266 ms
+[20:08:26] Finished 'browserify' after 7.78 s
+[20:08:26] Starting 'build'...
+[20:08:26] Finished 'build' after 91 μs
+```
+
+2. https://gulpjs.com/
+Following the steps on the Gulp site. 
+
 ### Update Settings
 Almost everything to personalize your site is in the ````_config.yml````. 
 
