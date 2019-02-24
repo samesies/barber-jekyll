@@ -31,8 +31,6 @@ Almost everything to personalize your site is in the ````_config.yml````.
 # Site/SEO settings
 email: okay@samesies.io
 baseurl: ""
-paginate: 12
-paginate_path: "/page/:num"
 permalink: /:year/:month/:day/:title/
 google_analytics: 
 
@@ -71,6 +69,31 @@ author:
   - name: Thomas Vaeth
     bio: Thomas Vaeth was born in New York, raised in Pennsylvania, and transplanted in Washington. He was a Web Developer at Urban Influence, but now he's a Software Engineer at Getty Images.
     url: http://thomasvaeth.com
+
+# Pagination settings
+pagination:
+  enabled: true
+  debug: false
+  per_page: 12
+  permalink: '/page/:num/'
+  title: ':title'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+autopages:
+  enabled: true
+  categories:
+    enabled: false
+  collections:
+    enabled: false
+  tags:
+    layouts: 
+      - 'tag.html'
+    title: 'The Barber Theme'
+    permalink: '/tag/:tag'
+    slugify:
+      mode: raw
+      cased: true
 ```
 
 You can change the URL the [contact form](#contact-form) is sent to, add Google Analytics, change the SEO settings, grow your website with additional authors, and much more.

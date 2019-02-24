@@ -40,15 +40,7 @@ author:
     bio: Thomas Vaeth was born in New York, raised in Pennsylvania, and transplanted in Washington. He was a Web Developer at Urban Influence, but now he's a Software Engineer at Getty Images.
     url: http://thomasvaeth.com
 
-# Build settings
-markdown: kramdown
-plugins:
-  - jekyll-paginate-v2
-  - jekyll-sitemap
-compress_html:
-  clippings: all
-  comments: all
-  startings: [html, head, body]
+# Pagination settings
 pagination:
   enabled: true
   debug: false
@@ -72,6 +64,16 @@ autopages:
     slugify:
       mode: raw
       cased: true
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+compress_html:
+  clippings: all
+  comments: all
+  startings: [html, head, body]
 exclude:
   - node_modules
   - .DS_Store
