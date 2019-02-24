@@ -1,8 +1,6 @@
 # Site/SEO settings
 email: okay@samesies.io
 baseurl: ""
-paginate: 12
-paginate_path: "/page/:num"
 permalink: /:year/:month/:day/:title/
 google_analytics: 
 
@@ -45,12 +43,35 @@ author:
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
 compress_html:
   clippings: all
   comments: all
   startings: [html, head, body]
+pagination:
+  enabled: true
+  debug: false
+  per_page: 12
+  permalink: '/page/:num/'
+  title: ':title'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+autopages:
+  enabled: true
+  categories:
+    enabled: false
+  collections:
+    enabled: false
+  tags:
+    layouts: 
+      - 'tag.html'
+    title: 'The Barber Theme'
+    permalink: '/tag/:tag'
+    slugify:
+      mode: raw
+      cased: true
 exclude:
   - node_modules
   - .DS_Store
