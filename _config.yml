@@ -4,11 +4,11 @@ baseurl: ""
 permalink: /:year/:month/:day/:title/
 google_analytics: 
 
-name: Thomas Vaeth
-title: The Barber Theme
+name: Skyler Busby
+title: Blou's Art
 description: >
-  Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
-url: http://barber.samesies.io
+  Arts.
+url: http://blouart.com
 twitter_username: thomasvaeth
 default_img: /assets/images/seo.jpg
 social:
