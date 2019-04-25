@@ -8,8 +8,9 @@ author: Blou anonynous
 tags:
   - Sad squid
 ---
--Feeling sad and blue
--still embedded with my yellow hues
+Feeling sad and blue
+
+still embedded with my yellow hues
 -slowly warping in the wind
 -yellow's truth tries to emboss my blues away--
 -aways away
