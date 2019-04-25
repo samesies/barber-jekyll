@@ -1,14 +1,26 @@
 ---
 layout: post
-title: "Brunch Swag"
-date: 2017-10-08
+title: "One more wish"
+date: 2019-04-20
 description: 
 image: /assets/images/bubblepic.png
-author: Thomas Vaeth
+author: Blou anonynous
 tags:
-  - Squid
+  - Sad squid
 ---
-Church-key XOXO try-hard, schlitz kickstarter meh marfa sustainable yuccie you probably haven't heard of them. Adaptogen selvage artisan franzen shabby chic listicle YOLO tofu schlitz marfa. Glossier pop-up salvia banh mi, echo park humblebrag hella actually dreamcatcher tumblr meggings iceland. 
+Feeling sad and blue
+still embedded with my yellow hues
+slowly warping in the wind
+yellow's truth tries to emboss my blues away--
+aways away
+my last amore becomes pure
+once again i feel the final wave
+slow surges
+revise my blue
+my sludge begins to clot
+and i begin feeling my luminous yellow
+soothe my blues away..
+
 
 Fanny pack chambray pinterest adaptogen salvia. Whatever cornhole single-origin coffee succulents selvage 3 wolf moon prism swag marfa flexitarian. Butcher semiotics gentrify fam. Normcore next level heirloom copper mug sriracha. Poke pop-up cray four loko activated charcoal DIY forage tilde schlitz ethical offal cronut post-ironic. Hell of bicycle rights wolf intelligentsia sriracha 90's skateboard fashion axe 3 wolf moon meditation.
 
