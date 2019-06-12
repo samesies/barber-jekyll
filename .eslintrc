@@ -10,6 +10,7 @@
     "no-unused-vars": "warn",
     "no-use-before-define": "warn",
     "quotes": ["error", "single"],
-    "require-jsdoc": "warn"
+    "require-jsdoc": "warn",
+    "node/no-unpublished-require": false
   }
 }
