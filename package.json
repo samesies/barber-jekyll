@@ -14,6 +14,10 @@
     "email": "okay@samesies.io",
     "url": "http://samesies.io"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samesies/barber-jekyll.git"
+  },
   "keywords": [
     "barber",
     "jekyll",
@@ -46,5 +50,6 @@
     "stylelint-config-standard": "^18.3.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
-  }
+  },
+  "license": "MIT"
 }
