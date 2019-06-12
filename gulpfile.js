@@ -3,7 +3,6 @@
 const gulp = require('gulp');
 const { series } = gulp;
 const autoprefixer = require('gulp-autoprefixer');
-const babelify = require('babelify');
 const browserify = require('browserify');
 const buffer = require('vinyl-buffer');
 const cleanCSS = require('gulp-clean-css');
@@ -39,7 +38,7 @@ gulp.task('sass', () => {
 
 gulp.task('lint', () => {
   return gulp.src([
-    './_assets/js/components/_formspree.js',
+    './_assets/js/components/_formcarry.js',
     './_assets/js/components/_infiniteScroll.js',
     './_assets/js/components/_mailChimp.js',
     './_assets/js/components/_miscellaneous.js',
