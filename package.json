@@ -18,6 +18,7 @@
     "type": "git",
     "url": "https://github.com/samesies/barber-jekyll.git"
   },
+  "bugs": "https://github.com/samesies/barber-jekyll/issues",
   "keywords": [
     "barber",
     "jekyll",
