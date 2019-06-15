@@ -63,7 +63,7 @@ const PageTransition = (() => {
     },
 
     firefox() {
-      s.window.unload(() => {
+      s.window.on('unload', () => {
         s.window.unbind('unload');
       });
     },

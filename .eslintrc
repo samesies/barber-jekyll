@@ -1,10 +1,18 @@
 {
-  "parser": "babel-eslint",
-  "extends": "eslint",
+  "extends": "eslint:recommended",
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
   "rules": {
     "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
     "indent": ["error", 2],
-    "no-console": ["error", { allow: ["error"] }],
+    "no-console": ["error", { "allow": ["error"] }],
     "no-inner-declarations": "off",
     "no-undef": "off",
     "no-unused-vars": "warn",
