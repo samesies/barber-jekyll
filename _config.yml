@@ -1,13 +1,13 @@
 # Site/SEO settings
-email: okay@samesies.io
+email: sbprendy@gmail.com
 baseurl: ""
 permalink: /:year/:month/:day/:title/
 google_analytics: 
 
-name: Thomas Vaeth
-title: The Barber Theme
+name: SP
+title: Hod Barber
 description: >
-  Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
+  HoD Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
 url: http://barber.samesies.io
 twitter_username: thomasvaeth
 default_img: /assets/images/seo.jpg
@@ -36,8 +36,8 @@ mailchimp_input: b_66ddf555dab480e6a8606430b_89b3ee034f
 
 # Author settings
 author:
-  - name: Thomas Vaeth
-    bio: Thomas Vaeth was born in New York, raised in Pennsylvania, and transplanted in Washington. He was a Web Developer at Urban Influence, but now he's a Software Engineer at Getty Images.
+  - name: SP
+    bio: Thomas Vaeth was NOT born in New York, raised in Pennsylvania, and transplanted in Washington. He was a Web Developer at Urban Influence, but now he's a Software Engineer at Getty Images.
     url: http://thomasvaeth.com
 
 # Pagination settings
