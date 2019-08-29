@@ -1,27 +1,23 @@
 # Site/SEO settings
-email: okay@samesies.io
+email: ayruos@gmail.com
 baseurl: ""
-permalink: /:year/:month/:day/:title/
-google_analytics: 
+permalink: :title/
+google_analytics:
 
-name: Thomas Vaeth
-title: The Barber Theme
+name: Sourya Sen
+title: Sourya Sen (Oblique)
 description: >
-  Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
-url: http://barber.samesies.io
-twitter_username: thomasvaeth
+  Personal and portfolio website of Sourya Sen (Oblique).
+url: http://sourya-sen.github.io
+twitter_username: ayruos
 default_img: /assets/images/seo.jpg
 social:
   - name: twitter
-    url: https://twitter.com/thomasvaeth
+    url: https://twitter.com/ayruos
   - name: instagram
-    url: https://www.instagram.com/thomas.vaeth/
-  - name: linkedin
-    url: https://www.linkedin.com/in/thomasvaeth/
+    url: https://www.instagram.com/ayruos/
   - name: github
-    url: https://github.com/samesies
-  - name: codepen
-    url: https://codepen.io/thomasvaeth/
+    url: https://github.com/sourya-sen
 
 # Contact settings
 contact_img: /assets/images/placeholder-28.jpg
@@ -57,7 +53,7 @@ autopages:
   collections:
     enabled: false
   tags:
-    layouts: 
+    layouts:
       - 'tag.html'
     title: 'The Barber Theme'
     permalink: '/tag/:tag'
