@@ -24,17 +24,17 @@ contact_img: /assets/images/placeholder-28.jpg
 formcarry: https://formcarry.com/s/HkIo0nMb7
 
 # Disqus settings
-disqus: test-apkdzgmqhj
+#disqus: test-apkdzgmqhj
 
 # MailChimp settings
-mailchimp_action: https://samesies.us17.list-manage.com/subscribe/post-json?u=66ddf555dab480e6a8606430b&amp;id=89b3ee034f
-mailchimp_input: b_66ddf555dab480e6a8606430b_89b3ee034f
+#mailchimp_action: https://samesies.us17.list-manage.com/subscribe/post-json?u=66ddf555dab480e6a8606430b&amp;id=89b3ee034f
+#mailchimp_input: b_66ddf555dab480e6a8606430b_89b3ee034f
 
 # Author settings
 author:
-  - name: Thomas Vaeth
-    bio: Thomas Vaeth was born in New York, raised in Pennsylvania, and transplanted in Washington. He was a Web Developer at Urban Influence, but now he's a Software Engineer at Getty Images.
-    url: http://thomasvaeth.com
+  - name: Sourya Sen
+    bio: Sourya Sen/Oblique is an audiovisual artist, creative coder and hardware hacker. His interests lie in generative visuals, hybrid instruments and finding emergent patterns at the intersection of art and technology, chaos and order, and noise and music. Coming from a background in traditional filmmaking and VJing, he’s currently expanding his practice to explore the intersecting points of behaviour that are away from traditional notions of audiovisual synchronicity, content creation and interaction using a host of tools, platforms and techniques.
+    url: http://ayruos.in
 
 # Pagination settings
 pagination:
