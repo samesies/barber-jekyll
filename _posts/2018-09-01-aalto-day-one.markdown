@@ -15,4 +15,4 @@ For branding of Aalto Day One 2019, I developed elements through a generative ar
 
 The full code, as well as a description of how the code functions, has been released open source and can be found [here](https://github.com/sourya-sen/Aalto_Day_One).
 
-The project was art directed by [Anna Muchenikova](http://annamuchenikova.com) and also had Babi Brasileiro and Robynn McPherson for visuals and graphic design. Images courtesy Esa Kapila.
+The project was art directed by [Anna Muchenikova](http://annamuchenikova.com) and also had [Babi Brasileiro](http://babibrasileiro.com) and Robynn McPherson for visuals and graphic design. Images courtesy Esa Kapila.
