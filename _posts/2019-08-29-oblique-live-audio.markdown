@@ -17,7 +17,7 @@ As an ongoing practise, I've been performing live electronic music as Oblique. A
 
 ![Aaniaalto](/assets/images/aaniaalto.jpg)
 
-As of September 2019, sets have been performed at Ääniaalto 2019 (Helsinki), Kontual Electronic 2019 (Helsinki), Reproduce Drones 29 (Kolkata) and Process ft. Oblique, Spiralynk and VvvvV (Kolkata).
+As of September 2019, sets have been performed at Ääniaalto 2019 (Helsinki), Kontula Electronic 2019 (Helsinki), Reproduce Drones 29 (Kolkata) and Process ft. Oblique, Spiralynk and VvvvV (Kolkata).
 
 Some of the livesets can be found below.
 

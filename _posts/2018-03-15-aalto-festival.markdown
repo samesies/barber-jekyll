@@ -9,6 +9,7 @@ tags:
   - After Effects
   - Animation
   - Projection Mapping
+  - Visuals
 ---
 
 I was brought into this project to animate the elements developed by [Anna Muchenikova](annamuchenikova.com) and [Babi Brasileiro](http://babibrasileiro.com) as part of the creative team for Aalto Festival 2018. These animated assets were used on the event website (developed by [Kukko](...), which was also featured as site of the day on ...) as well as in screens across various locations.
