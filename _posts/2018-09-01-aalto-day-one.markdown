@@ -9,6 +9,7 @@ tags:
   - openFrameworks
   - Graphic Design
   - Generative Art
+  - Visuals
 ---
 
 For branding of Aalto Day One 2019, I developed elements through a generative art practise which were subsequently used with traditional graphic design practises for the creatives of the event. These included posters and other promotional material, animated versions for displays as well as invites, stickers and more.

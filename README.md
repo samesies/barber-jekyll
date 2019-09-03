@@ -25,14 +25,14 @@ Barber is a minimal blog theme built for Jekyll. The blog theme features a mason
 Jekyll requires all dependencies to be saved in the ````Gemfile````. Run ````bundle install```` (Install [Bundler](http://bundler.io/) if it is not already) on your command line after downloading or cloning the theme. You can then run ````bundle exec jekyll serve```` or ````npm start```` to see your development site. Run ````bundle exec jekyll build```` or ````npm run build```` to build a production ready site for deployment.
 
 ### Update Settings
-Almost everything to personalize your site is in the ````_config.yml````. 
+Almost everything to personalize your site is in the ````_config.yml````.
 
 ```
 # Site/SEO settings
 email: okay@samesies.io
 baseurl: ""
 permalink: /:year/:month/:day/:title/
-google_analytics: 
+google_analytics:
 
 name: Thomas Vaeth
 title: The Barber Theme
@@ -62,7 +62,7 @@ disqus: test-apkdzgmqhj
 
 # MailChimp settings
 mailchimp_action: https://samesies.us17.list-manage.com/subscribe/post-json?u=66ddf555dab480e6a8606430b&amp;id=89b3ee034f
-mailchimp_input: b_66ddf555dab480e6a8606430b_89b3ee034f
+mailchimp_input: 58d6f11141cb6dcdf66233450ad8be3a-us4
 
 # Author settings
 author:
@@ -87,7 +87,7 @@ autopages:
   collections:
     enabled: false
   tags:
-    layouts: 
+    layouts:
       - 'tag.html'
     title: 'The Barber Theme'
     permalink: '/tag/:tag'
@@ -106,10 +106,10 @@ All posts go upder the ````_posts```` directory. You can also have a ````_drafts
 layout: post
 title: "Brunch Swag"
 date: 2017-02-18
-description: 
+description:
 image: /assets/images/placeholder-15.jpg
 author: Thomas Vaeth
-tags: 
+tags:
   - XOXO
   - La Croix
 ---

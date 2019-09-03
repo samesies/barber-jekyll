@@ -11,6 +11,7 @@ tags:
   - Performance
   - Audiovisual
   - Electronics
+  - Visuals
 ---
 
 As part of my Master's thesis, I designed and built a Eurorack compatible hybrid video synthesiser for audiovisual performance and composition.

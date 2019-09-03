@@ -9,6 +9,8 @@ tags:
   - openFrameworks
   - addon
   - open source
+  - Generative art
+  - Visuals
 ---
 
 ofxSandline is an openFrameworks addon that was developed as part of my generative art practise inspired by [a post from Anders Hoff/Inconvergent](https://inconvergent.net/2017/grains-of-sand/). It can be [found on Github](https://github.com/sourya-sen/ofxSandLine), alongside examples and documentation.
