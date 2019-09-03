@@ -3,7 +3,7 @@ layout: post
 title: "ofxCurve (openFrameworks addon)"
 date: 2018-08-20
 description:
-image: /assets/images/placeholder-12.jpg
+image: /assets/images/img-ofxcurve.png
 author: Sourya Sen
 tags:
   - openFrameworks
