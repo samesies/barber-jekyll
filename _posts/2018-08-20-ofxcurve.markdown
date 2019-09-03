@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ofxCurve (openFrameworks addon)"
+title: "ofxCurve"
 date: 2018-08-20
 description:
 image: /assets/images/img-ofxcurve.png
@@ -10,3 +10,7 @@ tags:
   - addon
   - open source
 ---
+
+ofxCurve is an openFrameworks addon for generating interpolated points on a curve based on a set of control points.
+
+Originally developed as part of the [Aalto Day One](/aalto-day-one) project, it eventually became a full-fledged addon and was subsequently [released on Github](https://github.com/sourya-sen/ofxCurve).

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hybrid Video Synthesiser"
-date: 2019-08-29
+date: 2019-07-15
 description:
 image: /assets/images/img-hvs.jpg
 author: Sourya Sen
