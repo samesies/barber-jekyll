@@ -39,11 +39,15 @@ layout: default
 
       <div class="section-padding">
         <div class="grid-small">
-          {% for author in site.author %}
-            <span class="post__author">Posted by {% if author["name"] == page.author and author["url"] %}<a href="{{ author['url'] }}" title="More By {{ page.author }}">{% endif %}{{ page.author }}{% if author["name"] == page.author and author["url"] %}</a>{% endif %}</span>
-            {% if author["name"] == page.author %}
-              <p class="post__bio">{{ author["bio"] }}</p>
+          {% for author in page.author %}
+            {% assign authorDetails = site.author | where: "name", author %}
+            {% if forloop.first == true %}
+              <span class="post__author">Posted by
+            {% else %}
+              <span class="post__author">&amp;
             {% endif %}
+            {% if authorDetails[0]["url"] %}<a href="{{ authorDetails[0]['url'] }}" title="More By {{ author }}">{% endif %}{{ author }}{% if authorDetails[0]["url"] %}</a>{% endif %}</span>
+            <p class="post__bio">{{ authorDetails[0]["bio"] }}</p>
           {% endfor %}
         </div>
       </div>
