@@ -14,7 +14,7 @@ layout: default
     {% if page.image %}
       <div class="post__img">
         <div>
-          <figure class="absolute-bg" style="background-image: url('{{ page.image }}');"></figure>
+          <figure class="absolute-bg" style="background-image: url('{{ page.image | relative_url }}');"></figure>
         </div>
       </div>
     {% endif %}
