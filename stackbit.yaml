@@ -231,6 +231,10 @@ models:
         label: Date
         description: The publish date of the post.
         required: true
+      - name: description
+        type: string
+        label: Description
+        description: The description used in meta tags.
       - name: image
         type: image
         label: Featured image
@@ -248,6 +252,7 @@ models:
     type: page
     label: Page
     template: page
+    exclude: "_posts/**"
     fields:
       - type: string
         name: title
