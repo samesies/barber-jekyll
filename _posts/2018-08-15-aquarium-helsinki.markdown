@@ -16,6 +16,8 @@ Over the summer of 2018, we (Jukka Eerikäinen, John Lee, Laura Horton and I) de
 
 ![Image Scanning](/assets/images/aqua01.jpg)
 
+The project was developed using Unity and comprises of custom hardware and fabrication, image recognition and processing and a 3D scene with custom fish behaviours alongside population control and other optimization algorithms.
+
 The project has been covered in various news outlets and media of which some links are below.
 
 [Aalto University Magazine](https://issuu.com/aaltouniversity/docs/aum_24_en_web/26)

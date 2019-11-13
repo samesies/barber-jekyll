@@ -43,4 +43,4 @@ These symbols are all generated with various different rule sets but with simila
 
 Based on simple geometric functions, these pseudo three dimensional forms are all generated with multiple shapes drawn in close proximity with each other with a differing sizes, offsets and colour channels. These were the foundations behind the shapes generated for the [Aalto Day One project](/aalto-day-one) and the Github repository linked in the same has more details behind the algorithms.
 
-Additionally, some are also presented in the [ofxCurve](/ofxCurve) post.
+Additionally, some are also presented in the [ofxSandline](/ofxSandline) post.

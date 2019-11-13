@@ -1,0 +1,24 @@
+---
+layout: post
+title: "TuneOut (2017)"
+date: 2017-12-15
+description:
+image: /assets/images/tuneOut.jpg
+author: Sourya Sen
+tags:
+  - Junction
+  - Hackathon
+  - Prototype
+  - Spotify
+  - hardware
+---
+
+TuneOut is a Spotify-connected, old-school radio developed at the Junction 2017 hackathon in Finland. Using this, one can tune between playlists Spotify has curated for you, like Discover Weekly and Release Radar.
+
+This idea came to us because we were tired of the constant feeling of being "on" that the internet creates, but still loved the widespread functionality it provides.
+
+The code is based around Spotify's API and uses node.js to communicate with the computer's serial port. The radio uses a set of dials and LEDs in a DIY setup. One dial controls the playlist selection, and the other controls the volume in Spotify. The LEDs provide status — volume and playlist selection.
+
+For more details as well as the entire codebase, please visit [The Devpost Project Link](https://devpost.com/software/tuneout).
+
+I primarily worked on the hardware side of things and helped in developing the algorithm. The rest of the team comprised of Laura Meskanen-Kundu, Liam Turner, Maya Pillai and Viktoriya Kuznetsova.

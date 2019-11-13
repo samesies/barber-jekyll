@@ -18,6 +18,9 @@ As part of my Master's thesis, I designed and built a Eurorack compatible hybrid
 
 Developed through an iterative design process, the project consists of a custom hardware interfacing with an Raspberry Pi running an openFrameworks application. It is compatible with Eurorack voltage ranges and can run multiple shaders which can be parameter driven through CV or through the panel controls as well as being sequenced.
 
+<iframe src="https://player.vimeo.com/video/277031718" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+
 Through the development process, the instrument has been both presented at various instances as well as used in live performances (LPM 2018, Rome; Aaniaalto, Helsinki).
 
 ![HVS_LPM_Presentation](/assets/images/img-hvs-lpm.jpg)
