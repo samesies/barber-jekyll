@@ -1,4 +1,4 @@
-//-------------------------------------------- 
+//--------------------------------------------
 // Sections
 //--------------------------------------------
 section {
@@ -6,10 +6,10 @@ section {
 }
 
 .section-padding {
-  padding: 2em 1em;
+  padding: 2em 2em;
 
   @media (min-width: $mq-small) {
-    padding: 3em 2em;
+    padding: 2em 2em;
   }
 
   @media (min-width: $mq-med) {
@@ -28,10 +28,10 @@ section {
 }
 
 .section-padding--double {
-  padding: 4em 1em;
+  padding: 2em 1em;
 
   @media (min-width: $mq-small) {
-    padding: 6em 2em;
+    padding: 2em 2em;
   }
 
   @media (min-width: $mq-med) {
@@ -92,7 +92,7 @@ section {
   }
 }
 
-//-------------------------------------------- 
+//--------------------------------------------
 // Grid
 //--------------------------------------------
 .grid {

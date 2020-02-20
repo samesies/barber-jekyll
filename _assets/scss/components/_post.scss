@@ -52,6 +52,7 @@
 
   &__content {
     border-top: $border;
+
   }
 
   &__social {
@@ -59,7 +60,7 @@
     @extend %no-list-style;
 
     margin: {
-      top: 2em;
+      top: 0em;
       bottom: 0;
       left: 0;
     }
@@ -150,32 +151,32 @@
   }
 
   h1 {
-    font-size: 2.25em;
-    line-height: 1.2;
+    font-size: 2.00em;
+    line-height: 1.1;
   }
 
   h2 {
-    font-size: 2em;
-    line-height: 1.2;
+    font-size: 1.75em;
+    line-height: 1.1;
   }
 
   h3 {
-    font-size: 1.75em;
-    line-height: 1.3;
+    font-size: 1.5em;
+    line-height: 1.2;
   }
 
   h4 {
-    font-size: 1.5em;
-    line-height: 1.3;
+    font-size: 1.25em;
+    line-height: 1.2;
   }
 
   h5 {
-    font-size: 1.25em;
-    line-height: 1.4;
+    font-size: 1.0em;
+    line-height: 1.3;
   }
 
   h6 {
-    font-size: 1.1em;
+    font-size: .9em;
   }
 
   h6 + hr {
@@ -191,7 +192,7 @@
     font-size: 1.1em;
 
     @media (min-width: $mq-small) {
-      font-size: 1.25em;
+      font-size: 1.0em;
     }
 
     img {

@@ -21,7 +21,7 @@ Developed through an iterative design process, the project consists of a custom 
 <iframe src="https://player.vimeo.com/video/277031718" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 
-Through the development process, the instrument has been both presented at various instances as well as used in live performances (LPM 2018, Rome; Aaniaalto, Helsinki).
+Through the development process, the instrument has been both presented at various instances as well as used in live performances (LPM 2018, Rome; Aaniaalto, Helsinki; Eyemyth Festival, Mumbai).
 
 ![HVS_LPM_Presentation](/assets/images/img-hvs-lpm.jpg)
 
