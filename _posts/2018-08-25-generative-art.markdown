@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Generative art (2019)"
+title: "Generative Art (2019)"
 date: 2018-09-01
 description:
 image: /assets/images/img-genarts.png

@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Berlin: Not At War (Audiovisual EP) (2015)"
+date: 2015-06-06
+description:
+image: /assets/images/bnaw.jpg
+author: Sourya Sen
+tags:
+  - Audiovisual
+  - EP
+  - music
+  - visuals
+---
+
+Over three months in Berlin, I wrote, produced and released an audiovisual EP exploring music and visual composition simultaneously, drawing inspiration from my work as a VJ and exploring my interest in electronic music production.
+
+The official description of the project is below:
+
+Berlin: Not At War, Oblique aka Sourya Sen's debut audio visual EP sees him work the other way around. Instead of making visuals for audio, visual loops are conceived, shot and then put together with music composed to fit the mood - combining live VJing style with music video aesthetics. Inspired by this historic city on his first visit; this EP captures images and sounds from the city itself and showcases sights and sounds that have left an impact.
+
+Sourya Sen is a Mumbai based VJ (as Oblique) and is a music video and music documentary editor, colour grader and motion graphics artist.
+
+Written and produced while on an artist residency at Institut für Alles Mögliche, Berlin.
+
+<iframe src="https://player.vimeo.com/video/129318180" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/129318180">Berlin: Not At War // Audio Visual EP</a> from <a href="https://vimeo.com/ayruos">Sourya Sen/Oblique</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

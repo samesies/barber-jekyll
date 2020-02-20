@@ -1,0 +1,15 @@
+---
+layout: post
+title: "The Great India Freak Show (Music Video)"
+date: 2016-06-06
+description:
+#image: /assets/images/tgifs.png
+author: Sourya Sen
+tags:
+  - Direction
+  - Video
+---
+
+Directed (and edited) a music video for the Kolkata-based band The Ganesh Talkies.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G8emeMAYtwU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
