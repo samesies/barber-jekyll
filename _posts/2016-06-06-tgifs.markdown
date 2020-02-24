@@ -3,7 +3,7 @@ layout: post
 title: "The Great India Freak Show (Music Video)"
 date: 2016-06-06
 description:
-#image: /assets/images/tgifs.png
+image: /assets/images/tgifs.png
 author: Sourya Sen
 tags:
   - Direction
