@@ -1,3 +1,6 @@
+# CHanges
+adding my own changes
+
 # Barber
 Barber is a minimal blog theme built for Jekyll. The blog theme features a masonry grid, endless scrolling, and page transitions. 💈 Barber is also available for [Ghost](https://github.com/samesies/barber-ghost).
 
