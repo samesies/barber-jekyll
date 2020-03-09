@@ -1,44 +1,27 @@
 # Site/SEO settings
-email: okay@samesies.io
+email: jane@thejunglejane.com
 baseurl: ""
 permalink: /:year/:month/:day/:title/
 google_analytics: 
 
-name: Thomas Vaeth
-title: The Barber Theme
-description: >
-  Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
-url: http://barber.samesies.io
-twitter_username: thomasvaeth
-default_img: /assets/images/seo.jpg
+name: Jane Adams
+title: Use A Bucket
+description: ceramics by @thejunglejane
+ura: https://useabucket.com
+default_img: /assets/images/Whitagram-Image2.JPG
 social:
-  - name: twitter
-    url: https://twitter.com/thomasvaeth
   - name: instagram
-    url: https://www.instagram.com/thomas.vaeth/
-  - name: linkedin
-    url: https://www.linkedin.com/in/thomasvaeth/
-  - name: github
-    url: https://github.com/samesies
-  - name: codepen
-    url: https://codepen.io/thomasvaeth/
+    url: https://www.instagram.com/useabucket/
 
 # Contact settings
-contact_img: /assets/images/placeholder-28.jpg
+contact_img: /assets/images/Whitagram-Image2.JPG
 formcarry: https://formcarry.com/s/HkIo0nMb7
-
-# Disqus settings
-disqus: test-apkdzgmqhj
-
-# MailChimp settings
-mailchimp_action: https://samesies.us17.list-manage.com/subscribe/post-json?u=66ddf555dab480e6a8606430b&amp;id=89b3ee034f
-mailchimp_input: b_66ddf555dab480e6a8606430b_89b3ee034f
 
 # Author settings
 author:
-  - name: Thomas Vaeth
-    bio: Thomas Vaeth was born in New York, raised in Pennsylvania, and transplanted in Washington. He was a Web Developer at Urban Influence, but now he's a Software Engineer at Getty Images.
-    url: http://thomasvaeth.com
+  - name: Jane Adams
+    bio: Jane was born and raised in Michigan. She now lives in Brooklyn.
+    url: https://useabucket.com
 
 # Pagination settings
 pagination:
@@ -59,7 +42,7 @@ autopages:
   tags:
     layouts: 
       - 'tag.html'
-    title: 'The Barber Theme'
+    title: 'Use A Bucket'
     permalink: '/tag/:tag'
     slugify:
       mode: raw
