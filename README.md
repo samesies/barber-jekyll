@@ -18,7 +18,7 @@ once done
 ```bash
 gem install bundler
 bundler install
-bundler exec jenkins build
+bundler exec jekyll build
 ```
 git add .
 git comment -m 'your comment'
