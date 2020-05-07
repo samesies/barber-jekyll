@@ -1,7 +1,8 @@
 ## How to setup
-**git clone [repo address]**
-cd herekoCha
-add new files in the _posts folder follow the filename style **year-month-day-Name.markdown**
+* **git clone [repo address]**
+
+* cd herekoCha
+* add new files in the _posts folder follow the filename style **year-month-day-Name.markdown**
 For starter just copy from the other posts that i have put in place
 ```yaml
 ---
