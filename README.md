@@ -20,6 +20,8 @@ gem install bundler
 bundler install
 bundler exec jekyll build
 ```
-* git add .
-* git comment -m 'your comment'
-* git push
+``` bash
+git add .
+git comment -m 'your comment'
+git push
+```
