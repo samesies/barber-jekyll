@@ -1,4 +1,10 @@
 ## How to setup
+### Git setup first time
+* Git installation in your computer [Git link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* Git ssh setup from your computer [ssh link](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+* Git first time setup [setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+
+### Regular work
 ```bash
 git clone [repo address]
 cd herekoCha
