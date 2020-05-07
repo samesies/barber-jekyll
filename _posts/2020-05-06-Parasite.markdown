@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Parasite"
+date: 2020-05-06
+description: First review
+image: /assets/images/parasite.jpg
+author: Jungee
+tags:
+  - korean
+  - Foreign
+---
+
+The biggest hit movie of the year is surely a thrilling movie on it's own. The cast are fantastic and the satire in the film is good. I will give it a score of 9/10 for satire and 7/10 for direction. The characters are nicely placed and everything is fine.
