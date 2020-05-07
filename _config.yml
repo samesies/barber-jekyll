@@ -4,10 +4,10 @@ baseurl: ""
 permalink: /:year/:month/:day/:title/
 google_analytics: 
 
-name: Thomas Vaeth
-title: The Barber Theme
+name: JungeeBah
+title: HerekoChau
 description: >
-  Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
+  HerekoChau stands to just blab about the movies that we have seen
 url: https://jungeebah.github.io/herekoCha
 twitter_username: thomasvaeth
 default_img: /assets/images/seo.jpg
@@ -59,7 +59,7 @@ autopages:
   tags:
     layouts: 
       - 'tag.html'
-    title: 'The Barber Theme'
+    title: 'HerekoChau'
     permalink: '/tag/:tag'
     slugify:
       mode: raw
