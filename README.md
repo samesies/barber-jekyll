@@ -6,7 +6,7 @@
 
 ### Regular work
 ```bash
-git clone https://github.com/jungeebah/herekoCha.git
+git clone git@github.com:jungeebah/herekoCha.git
 cd herekoCha
 ```
 * add new files in the _posts folder follow the filename style **year-month-day-Name.markdown**
