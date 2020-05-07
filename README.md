@@ -16,7 +16,7 @@ put your content here
 ```
 For this too work install bundler for that you should have ruby installed linked
 [ruby installation](https://www.ruby-lang.org/en/documentation/installation/)
-once done 
+* once done 
 ```bash
 gem install bundler
 bundler install
