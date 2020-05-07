@@ -14,7 +14,8 @@ For images download it and add that to _assets/images/ folder and put the locati
 put your content here
 
 ```
-For this too work install bundler for that you should have ruby installed
+For this too work install bundler for that you should have ruby installed linked
+[ruby installation](https://www.ruby-lang.org/en/documentation/installation/)
 once done 
 ```bash
 gem install bundler
