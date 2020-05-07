@@ -1,6 +1,6 @@
 ## How to setup
 ```bash
-git clone [repo address]**
+git clone [repo address]
 cd herekoCha
 ```
 * add new files in the _posts folder follow the filename style **year-month-day-Name.markdown**
