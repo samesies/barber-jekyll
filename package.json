@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "aos": "^2.3.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "salvattore": "^1.0.9"
   },
   "devDependencies": {
