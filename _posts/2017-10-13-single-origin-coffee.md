@@ -2,8 +2,8 @@
 layout: post
 title: "Single-origin Coffee"
 date: 2017-10-13
-description: 
-image: /assets/images/placeholder-21.jpg
+description: ""
+image: assets/images/placeholder-21.jpg
 author: Thomas Vaeth
 tags: 
   - Mixtape

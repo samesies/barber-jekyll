@@ -2,8 +2,8 @@
 layout: post
 title: "Coloring Book"
 date: 2017-10-22
-description: 
-image: /assets/images/placeholder-8.jpg
+description: ""
+image: assets/images/placeholder-8.jpg
 author: Thomas Vaeth
 tags: 
   - Squid

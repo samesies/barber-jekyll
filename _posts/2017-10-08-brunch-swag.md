@@ -2,8 +2,8 @@
 layout: post
 title: "Brunch Swag"
 date: 2017-10-08
-description: 
-image: /assets/images/placeholder-15.jpg
+description: ""
+image: assets/images/placeholder-15.jpg
 author: Thomas Vaeth
 tags:
   - Squid

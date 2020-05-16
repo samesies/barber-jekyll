@@ -14,7 +14,7 @@ layout: default
     {% if page.image %}
       <div class="post__img">
         <div>
-          <figure class="absolute-bg" style="background-image: url('{{ page.image }}');"></figure>
+          <figure class="absolute-bg" style="background-image: url('{{ page.image | relative_url }}');"></figure>
         </div>
       </div>
     {% endif %}
@@ -70,7 +70,7 @@ layout: default
             <a class="related__link" href="{{ post.url | absolute_url }}">
               {% if post.image %}
                 <figure class="related__img">
-                  <img src="{{ post.image }}" alt="{{ post.title }}"/>
+                  <img src="{{ post.image | relative_url }}" alt="{{ post.title }}"/>
                 </figure>
               {% endif %}
               <div>

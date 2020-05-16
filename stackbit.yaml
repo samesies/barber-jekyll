@@ -1,0 +1,265 @@
+stackbitVersion: "~0.2.0"
+ssgName: jekyll
+buildCommand: "bundle install && bundle exec jekyll build" 
+staticDir: ""
+uploadDir: assets/images
+publishDir: "_site"
+pagesDir: ""
+pageTemplateKey: layout
+models:
+  config:
+    type: config
+    label: Global Site Config
+    fields:
+      - type: string
+        name: email
+        label: Your email address
+      - type: string
+        name: baseurl
+        label: Baseurl
+        description: The subpath of your site, e.g. /blog, for generating urls.
+      - type: string
+        name: permalink
+        label: Permalink
+        description: The permalink pattern.
+      - type: string
+        name: google_analytics
+        label: Google Analytics
+        description: Your Google Analytics identifier. For example, UA-99631805-1.
+      - type: string
+        name: name
+        label: Your name
+        description: Your name used in meta tags.
+      - type: string
+        name: title
+        label: Site Title
+        description: The title displayed in the site header, title tag.
+      - type: string
+        name: description
+        label: Description
+        description: The default description displayed in meta tags.
+      - type: string
+        name: url
+        label: Url
+        description: The base hostname & protocol for your site, e.g. http://example.com
+      - type: string
+        name: twitter_username
+        label: Twitter username
+        description: Twitter username used in meta tags.
+      - type: image
+        name: default_img
+        label: Default image
+        description: Default site image used in meta tags.
+      - type: list
+        name: social
+        label: Social links
+        description: Footer social links.
+        items:
+          type: object
+          labelField: name
+          fields:
+            - type: string
+              name: name
+              label: Title
+              required: true
+            - type: string
+              name: url
+              label: URL
+      - type: image
+        name: contact_img
+        label: Contact form image
+        description: Image for contact form.
+      - type: string
+        name: formcarry
+        label: Formcarry
+        description: Formcarry form URL.
+      - type: string
+        name: disqus
+        label: Disqus username
+        description: The shortname for your Disqus site to enable comments.
+      - type: string
+        name: mailchimp_action
+        label: Mailchimp action
+        description: Mailchimp action URL.
+      - type: string
+        name: mailchimp_input
+        label: Mailchimp input
+        description: Mailchimp hidden input field name value.
+      - type: list
+        name: author
+        label: Author
+        items:
+          type: object
+          labelField: name
+          fields:
+            - type: string
+              name: name
+              label: Name
+              required: true
+            - type: string
+              name: bio
+              label: Bio  
+            - type: string
+              name: url
+              label: URL
+      - type: string
+        name: markdown
+        label: Markdown
+        hidden: true
+      - type: list
+        name: plugins
+        label: Plugins
+        items:
+          type: string
+      - type: object
+        name: compress_html
+        label: Compress HTML
+        hidden: true
+        fields:
+          - type: string
+            name: clippings
+            label: Clippings
+          - type: string
+            name: comments
+            label: Comments
+          - type: list
+            name: startings
+            label: Startings
+            items:
+              type: string
+      - type: object
+        name: pagination
+        label: Pagination setings
+        fields:
+          - type: boolean
+            name: enabled
+            label: Pagination enabled
+            default: true
+          - type: boolean
+            name: debug
+            label: Debug
+            default: false
+          - type: number
+            name: per_page
+            label: Number of posts per page
+          - type: string
+            name: permalink
+            label: Permalink
+            description: The permalink pattern.
+          - type: string
+            name: title
+            label: Title
+          - type: number
+            name: limit
+            label: Limit
+          - type: string
+            name: sort_field
+            label: Sort field
+          - type: boolean
+            name: sort_reverse
+            label: Sort reverse
+            default: true
+      - type: list
+        name: exclude
+        label: Exclude
+        items:
+          type: string
+        hidden: true
+      - type: object
+        name: autopages
+        label: Autopages setings
+        fields:
+          - type: boolean
+            name: enabled
+            label: Autopages enabled
+            default: true
+          - type: object
+            name: categories
+            label: Categories
+            fields:
+              - type: boolean
+                name: enabled
+                label: Categories enabled
+                default: false
+          - type: object
+            name: collections
+            label: Collections
+            fields:
+              - type: boolean
+                name: enabled
+                label: Collections enabled
+                default: false
+          - type: object
+            name: tags
+            label: Tags
+            fields:
+              - type: list
+                name: layouts
+                label: Layouts
+                items:
+                  type: string
+              - type: string
+                name: title
+                label: Title
+              - type: string
+                name: permalink
+                label: Permalink
+              - type: object
+                name: slugify
+                label: Slugify
+                fields:
+                - type: string
+                  name: mode
+                  label: mode
+                - type: boolean
+                  name: cased
+                  label: Cased
+                  default: true
+  post:
+    type: page
+    label: Post
+    template: post
+    folder: _posts
+    fields:
+      - name: title
+        type: string
+        label: Title
+        description: The title of the post.
+        required: true
+      - name: date
+        type: date
+        label: Date
+        description: The publish date of the post.
+        required: true
+      - name: description
+        type: string
+        label: Description
+        description: The description used in meta tags.
+      - name: image
+        type: image
+        label: Featured image
+        description: The featured image of the post.
+      - name: author
+        type: string
+        label: Author
+        description: The author of the post.
+      - name: tags
+        type: list
+        label: Tags
+        items:
+          type: string
+  page:
+    type: page
+    label: Page
+    template: page
+    exclude: "_posts/**"
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the page.
+        required: true
+      - type: image
+        name: image
+        label: Featured image
+        description: The featured image of the page.
