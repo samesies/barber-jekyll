@@ -32,7 +32,6 @@ Almost everything to personalize your site is in the ````_config.yml````.
 email: okay@samesies.io
 baseurl: ""
 permalink: /:year/:month/:day/:title/
-google_analytics: 
 
 name: Thomas Vaeth
 title: The Barber Theme
