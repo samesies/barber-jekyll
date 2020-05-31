@@ -95,7 +95,7 @@ autopages:
       cased: true
 ```
 
-You can change the URL the [contact form](#contact-form) is sent to, add Google Analytics, change the SEO settings, grow your website with additional authors, and much more.
+You can change the URL the [contact form](#contact-form) is sent to, change the SEO settings, grow your website with additional authors, and much more.
 
 ### Create Posts
 All posts go upder the ````_posts```` directory. You can also have a ````_drafts```` directory with posts that will on your development page, but not in production.
