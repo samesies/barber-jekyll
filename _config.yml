@@ -4,10 +4,10 @@ baseurl: ""
 permalink: /:year/:month/:day/:title/
 google_analytics: 
 
-name: Thomas Vaeth
-title: The Barber Theme
+name: 김희영 
+title: 공간
 description: >
-  Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
+  블로그를 시작했습니다.
 url: http://barber.samesies.io
 twitter_username: thomasvaeth
 default_img: /assets/images/seo.jpg
@@ -15,7 +15,7 @@ social:
   - name: twitter
     url: https://twitter.com/thomasvaeth
   - name: instagram
-    url: https://www.instagram.com/thomas.vaeth/
+    url: https://www.instagram.com/kimheeyounghee/
   - name: linkedin
     url: https://www.linkedin.com/in/thomasvaeth/
   - name: github
